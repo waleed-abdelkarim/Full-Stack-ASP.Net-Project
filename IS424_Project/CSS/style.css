@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.container_table {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.container_center {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#logo {
+  width: 53%;
+}
+.quiz {
+  min-height: 500px;
+  margin-top: 100px;
+}
+
+.contact {
+  min-height: 500px;
+  margin-top: 100px;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: lightgray;
+}
+header {
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  color: white;
+  background-color: teal;
+  position: absolute;
+  min-height: 10%;
+  border-bottom: 5px solid darkorange;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cont_menu {
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  min-height: 200px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+div.menu {
+  float: right;
+  margin-top: 2%;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 22px;
+  z-index: 2;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li {
+  display: block;
+  float: left;
+}
+
+.menu li ul {
+  display: none;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0 8px 0 8px;
+  background: darkorange;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.menu ul li ul a {
+  border-top: solid;
+  padding: 0 5px 0 5px;
+}
+
+.menu ul li a:hover {
+  color: darkorange;
+  background-color: white;
+  transition: ease-in;
+  transition-duration: 0.5s;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu li:hover li {
+  float: none;
+  font-size: 18px;
+}
+
+.menu li:hover a {
+  color: white;
+  background-color: darkorange;
+}
+
+li:hover li a:hover {
+  color: darkorange;
+  background-color: white;
+  transition: ease-in;
+  transition-duration: 0.5s;
+}
+
+#description {
+  min-height: 500px;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+}
+
+#description h1 {
+  margin-top: 10%;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#description p {
+  font-size: 30px;
+  background-color: rgba(100, 55, 0, 0.6);
+  border-radius: 20px 50px;
+}
+
+.boxes {
+  margin-top: 2%;
+
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+div ul {
+  text-align: left;
+  font-size: 24px;
+}
+.box {
+  display: inline-block;
+  background-color: darkorange;
+  border: solid;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  margin-right: 50px;
+  margin-bottom: 5%;
+  overflow: hidden;
+  border-radius: 20px 50px;
+}
+
+.box:hover {
+  color: darkorange;
+  background-color: white;
+}
+.boxes a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px 0 10px;
+}
+
+.box img {
+  width: 30%;
+}
+
+footer {
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  color: white;
+  background-color: teal;
+  min-height: 10%;
+  border-top: 5px solid darkorange;
+  overflow: hidden;
+}
+
+#names {
+  font-size: 20px;
+}
+
+#return {
+  position: fixed;
+  left: 0px;
+  top: 70%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+#return a {
+  text-decoration: none;
+  background-color: teal;
+  border: solid teal;
+  color: white;
+}
+#return a:hover {
+  background-color: darkorange;
+  color: white;
+  border: solid darkorange;
+  transition: ease-in;
+  transition-duration: 0.5s;
+}
+.TOC {
+  float: left;
+  position: absolute;
+  background-color: darkorange;
+  text-align: center;
+  min-width: 410px;
+  min-height: 430px;
+  padding: 10px;
+  border-radius: 0 50px 50px 0;
+  margin-top: 70px;
+  overflow: hidden;
+
+}
+
+iframe {
+  width: 720px;
+  height: 405px;
+}
+.frame_box img {
+  width: 720px;
+  height: 405px;
+  float: center;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quiz p {
+  font-size: 24px;
+}
+.quiz label {
+  font-size: 24px;
+}
+.quiz caption {
+  font-size: 34px;
+}
+
+@media (max-width: 1100px) {
+  div.menu {
+    top: 23%;
+    right: 4%;
+  }
+  #description h1 {
+    margin-top: 20%;
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  #description p {
+    font-size: 20px;
+  }
+  .container_center {
+    width: 90%;
+  }
+  .box {
+    margin-right: 15px;
+    width: 250px;
+  }
+  .quiz {
+    margin-top: 150px;
+  }
+
+  iframe {
+    width: 510px;
+    height: 287px;
+  }
+  .frame_box img {
+    width: 510px;
+    height: 287px;
+  }
+  #logo {
+    width: 100%;
+  }
+  .TOC {
+    margin-top: 90px;
+    min-height: 410px;
+  }
+
+  .container_table {
+    width: 100%;
+  }
+  header {
+    min-height: 12%;
+    padding-bottom: 30px;
+  }
+
+  .quiz p {
+    font-size: 18px;
+  }
+  .quiz label {
+    font-size: 18px;
+  }
+  .quiz caption {
+    font-size: 26px;
+  }
+}
+@media (max-height: 810px) {
+  .TOC {
+    margin-top: 75px;
+    min-height: 425px;
+  }
+}
+@media (max-width: 700px) {
+    #description h1{
+         margin-top: 30%;
+    }
+  div.menu {
+    top: 30%;
+    right: 4%;
+  }
+
+  div.menu ul li a {
+    font-size: 18px;
+    padding: 0 6px 0 6px;
+    margin-left: 8px;
+  }
+
+  div.menu ul li ul a {
+    font-size: 16px;
+  }
+
+  .box {
+    margin: auto;
+    min-width: 97%;
+    position: static;
+  }
+  #logo {
+    font-size: 24px;
+  }
+  .TOC {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .TOC li {
+    font-size: 23px;
+  }
+
+  #names {
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 380px;
+    height: 214px;
+  }
+  .frame_box img {
+    width: 380px;
+    height: 214px;
+  }
+  .quiz p {
+    font-size: 16px;
+  }
+  .quiz label {
+    font-size: 16px;
+  }
+  .quiz caption {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container_center {
+    width: 100%;
+  }
+  .box {
+    margin-right: 20px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .TOC {
+    display: block;
+    position: relative;
+    min-width: 60%;
+  }
+}
