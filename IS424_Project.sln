@@ -3,40 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IS424_Project", "IS424_Project\", "{655CE8AB-5BF4-4E15-837A-2B0DF6C2C313}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_52489"
-		Debug.AspNetCompiler.PhysicalPath = "IS424_Project\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52489\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_52489"
-		Release.AspNetCompiler.PhysicalPath = "IS424_Project\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52489\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "52489"
-		SlnRelativePath = "IS424_Project\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS424_Project", "IS424_Project\IS424_Project.csproj", "{E7ACB4AB-C1C2-4675-994F-E1052F69C4AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{655CE8AB-5BF4-4E15-837A-2B0DF6C2C313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{655CE8AB-5BF4-4E15-837A-2B0DF6C2C313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7ACB4AB-C1C2-4675-994F-E1052F69C4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7ACB4AB-C1C2-4675-994F-E1052F69C4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7ACB4AB-C1C2-4675-994F-E1052F69C4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7ACB4AB-C1C2-4675-994F-E1052F69C4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E84C341E-16A0-4002-9446-B804A20CD1A3}
+		SolutionGuid = {996A88AE-B957-4E49-8D39-95EEC50F723C}
 	EndGlobalSection
 EndGlobal
