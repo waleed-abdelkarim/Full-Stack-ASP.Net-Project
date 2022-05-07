@@ -67,12 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sub pages\contact.html" />
-    <Content Include="Sub pages\css.html" />
+    <Content Include="img\asp.png" />
+    <Content Include="img\w3_ajax.png" />
+    <Content Include="img\w3_asp.png" />
+    <Content Include="img\w3_xml.png" />
+    <Content Include="img\xml.png" />
+    <Content Include="Sub pages\contact_old.html" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
-    <Content Include="Home.html" />
-    <Content Include="Sub pages\html.html" />
     <Content Include="img\contact.png" />
     <Content Include="img\css.png" />
     <Content Include="img\exams.png" />
@@ -86,21 +88,17 @@
     <Content Include="img\w3_html.png" />
     <Content Include="img\w3_js.png" />
     <Content Include="img\web.png" />
-    <Content Include="Sub pages\JS.html" />
-    <Content Include="Sub pages\css_Exam.html" />
-    <Content Include="Sub pages\css_lectures.html" />
-    <Content Include="Sub pages\css_resources.html" />
-    <Content Include="Sub pages\html_Exam.html" />
-    <Content Include="Sub pages\html_lectures.html" />
-    <Content Include="Sub pages\html_resources.html" />
-    <Content Include="Sub pages\JS_Exam.html" />
-    <Content Include="Sub pages\JS_lectures.html" />
-    <Content Include="Sub pages\JS_resources.html" />
-    <Content Include="Sub pages\JS_lectures.aspx" />
-    <Content Include="Sub pages\JS.aspx" />
-    <Content Include="Sub pages\JS_resources.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Sub pages\CSS.aspx" />
     <Content Include="Sub pages\Home.aspx" />
+    <Content Include="Sub pages\HTML.aspx" />
+    <Content Include="Sub pages\JS.aspx" />
+    <Content Include="Sub pages\Learn.aspx" />
+    <Content Include="Sub pages\LearnASP.aspx" />
+    <Content Include="Sub pages\XML_Ajax.aspx" />
+    <Content Include="Sub pages\css_Exam_old.html" />
+    <Content Include="Sub pages\html_Exam_old.html" />
+    <Content Include="Sub pages\JS_Exam_old.html" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -114,6 +112,13 @@
     <Compile Include="masterPage.Master.designer.cs">
       <DependentUpon>masterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Sub pages\CSS.aspx.cs">
+      <DependentUpon>CSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\CSS.aspx.designer.cs">
+      <DependentUpon>CSS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sub pages\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -121,12 +126,12 @@
     <Compile Include="Sub pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sub pages\JS_lectures.aspx.cs">
-      <DependentUpon>JS_lectures.aspx</DependentUpon>
+    <Compile Include="Sub pages\HTML.aspx.cs">
+      <DependentUpon>HTML.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sub pages\JS_lectures.aspx.designer.cs">
-      <DependentUpon>JS_lectures.aspx</DependentUpon>
+    <Compile Include="Sub pages\HTML.aspx.designer.cs">
+      <DependentUpon>HTML.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\JS.aspx.cs">
       <DependentUpon>JS.aspx</DependentUpon>
@@ -135,12 +140,26 @@
     <Compile Include="Sub pages\JS.aspx.designer.cs">
       <DependentUpon>JS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sub pages\JS_resources.aspx.cs">
-      <DependentUpon>JS_resources.aspx</DependentUpon>
+    <Compile Include="Sub pages\Learn.aspx.cs">
+      <DependentUpon>Learn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sub pages\JS_resources.aspx.designer.cs">
-      <DependentUpon>JS_resources.aspx</DependentUpon>
+    <Compile Include="Sub pages\Learn.aspx.designer.cs">
+      <DependentUpon>Learn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\LearnASP.aspx.cs">
+      <DependentUpon>LearnASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\LearnASP.aspx.designer.cs">
+      <DependentUpon>LearnASP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\XML_Ajax.aspx.cs">
+      <DependentUpon>XML_Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\XML_Ajax.aspx.designer.cs">
+      <DependentUpon>XML_Ajax.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +179,11 @@
     <Content Include="Files\JS\IS446-chap09.pdf" />
     <Content Include="Files\JS\IS446-chap10.pdf" />
     <Content Include="Files\JS\IS446-chap11.pdf" />
+    <Content Include="Files\XML_Ajax\ch14XML.zip" />
+    <Content Include="Files\XML_Ajax\IS446-chap14.pdf" />
+    <Content Include="Files\XML_Ajax\IS446-chap15.pdf" />
+    <Content Include="Files\ASP\ch25ASP.NET.zip" />
+    <Content Include="Files\ASP\IS446-chap25.pdf" />
     <None Include="packages.config" />
     <Content Include="masterPage.Master" />
     <None Include="Web.Debug.config">

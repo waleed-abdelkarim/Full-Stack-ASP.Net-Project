@@ -11,7 +11,7 @@ namespace IS424_Project.Sub_pages
 {
 
 
-    public partial class JS
+    public partial class Learn
     {
     }
 }

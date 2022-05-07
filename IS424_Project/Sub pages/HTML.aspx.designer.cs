@@ -11,7 +11,7 @@ namespace IS424_Project.Sub_pages
 {
 
 
-    public partial class WebForm1
+    public partial class HTML
     {
     }
 }

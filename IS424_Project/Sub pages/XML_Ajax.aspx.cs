@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace IS424_Project.Sub_pages
 {
-    public partial class JS : System.Web.UI.Page
+    public partial class XML_Ajax : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

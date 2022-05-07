@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 .container {
     width: 90%;
     margin: auto;
@@ -11,9 +15,15 @@
 .container_table {
     width: 90%;
     margin: auto;
+    margin-top:2em;
     overflow: hidden;
 }
 
+.container_dis {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
 .container_center {
     width: 90%;
     margin: auto;
@@ -126,10 +136,11 @@ li:hover li a:hover {
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
     #description h1 {
-        margin-top: 10%;
         font-size: 55px;
         margin-bottom: 10px;
     }
@@ -178,7 +189,10 @@ div ul {
     .box img {
         width: 30%;
     }
-
+.frame_box {
+    border-bottom: solid;
+    padding-top: 20px;
+}
 footer {
     width: 100%;
     left: 0%;
@@ -220,10 +234,10 @@ footer {
 .TOC {
     background-color: darkorange;
     text-align: center;
-    min-width: 410px;
-    min-height: 500px;
+/*    min-width: 410px;
+    min-height: 500px;*/
     border-radius: 0 50px 50px 0;
-    overflow: hidden;
+    overflow: hidden;                                                                                                                               
 }
 
     .TOC a {
@@ -322,7 +336,8 @@ iframe {
     }
 
     .TOC {
-        min-height: 410px;
+/*        min-height: 410px;*/
+        font-size: 20px;
     }
 
     .container_table {
@@ -357,18 +372,25 @@ iframe {
         }
 
     #description {
-        min-height: 300px;
+        flex-wrap: wrap-reverse;
     }
 
     .TOC {
-        width: 100%;
+/*        width: 100%;*/
         border-radius: 0;
+        flex: 100%;
     }
 
         .TOC li {
-            font-size: 23px;
+            font-size: 20px;
         }
 
+    .container_center {
+        width: 90%;
+    }
+    .container_dis{
+        flex:95%
+    }
     #names {
         font-size: 14px;
     }

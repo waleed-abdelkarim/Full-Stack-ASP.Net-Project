@@ -21,29 +21,24 @@
                 <ul>
                     <li><a href="./Home.aspx">Home</a></li>
 
-                    <li><a href="./html.html">HTML</a>
+                    <li><a href="./Learn.aspx">Learn</a>
                         <ul>
-                            <li><a href="./html_lectures.html">Lectures</a></li>
-                            <li><a href="./html_resources.html">Resources</a></li>
-                            <li><a href="./html_Exam.html">Exams</a></li>
+                            <li><a href="./HTML.aspx">HTML</a></li>
+                            <li><a href="./CSS.aspx">CSS</a></li>
+                            <li><a href="./JS.aspx">JavaScript</a></li>
+                            <li><a href="./XML_Ajax.aspx">XML & Ajax</a></li>
+                            <li><a href="./LearnASP.aspx">ASP .Net</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="./css.html">CSS</a>
+                     <li><a href="./Exams.aspx">Exams</a>
                         <ul>
-                            <li><a href="./css_lectures.html">Lectures</a></li>
-                            <li><a href="./css_resources.html">Resources</a></li>
-                            <li><a href="./css_Exam.html">Exams</a></li>
+                            <li><a href="./easy.aspx">Eesy</a></li>
+                            <li><a href="./moderate.aspx">Moderate</a></li>
+                            <li><a href="./hard.aspx">Hard</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="./JS.aspx">JS</a>
-                        <ul>
-                            <li><a href="./JS_lectures.aspx">Lectures</a></li>
-                            <li><a href="./JS_resources.aspx">Resources</a></li>
-                            <li><a href="./JS_Exam.html">Exams</a></li>
-                        </ul>
-                    </li>
 
                     <li><a href="./Contact.html">Contact Us</a></li>
                 </ul>
