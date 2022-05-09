@@ -47,8 +47,8 @@
 
 			<a href="./LearnASP.aspx">
 				<div class="box">
-					<img src="../img/asp.png">
-					<h2>ASP .Net</h2>
+					<img src="../img/asp.png" style="width: 50%;">
+					<h2 >ASP .Net</h2>
 					<p>Learn the basic of ASP .Net</p>
 				</div>
 			</a>

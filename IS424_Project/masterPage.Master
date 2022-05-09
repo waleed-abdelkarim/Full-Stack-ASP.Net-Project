@@ -33,9 +33,9 @@
 
                      <li><a href="./Exams.aspx">Exams</a>
                         <ul>
-                            <li><a href="./easy.aspx">Eesy</a></li>
+                            <li><a href="./easy.aspx">easy</a></li>
                             <li><a href="./moderate.aspx">Moderate</a></li>
-                            <li><a href="./hard.aspx">Hard</a></li>
+                            <li><a href="./expert.aspx">Expert</a></li>
                         </ul>
                     </li>
 
