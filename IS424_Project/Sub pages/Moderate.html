@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+<head >
     <meta charset="utf-8" />
     <title></title>
     <html xmlns="./Moderate.xml">
-<script src="Moderate.js"></script>
+<script src="Moderate.js" onload="loadXMLDoc();"></script>
 </head>
-<body onLoad="loadXMLDoc()">
-    <section class="quiz">
+<body>
+
+    <section class="quiz" >
         <table class="container_ce"  id="id" >
             <caption>
                 <h1>Moderate Quiz</h1>
@@ -147,7 +148,6 @@
                     <td>
                         <p>
                             <input type="submit" value="Submit" class="but" onclick="result()" />
-                            <input type="reset" value="Clear" class="but" />
                         </p>
                     </td>
                 </tr>

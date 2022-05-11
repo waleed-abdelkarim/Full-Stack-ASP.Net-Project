@@ -1,15 +1,4 @@
-﻿function questions() {
-        document.writeln("<h1>Hello</h1>");
-        document.write("<caption>< h1 > Moderate Quiz</h1 ></caption > <form method=\"post\" id=\"form\">");
-        document.write("<strong>Question 1: " +q1+"<br></strong><br> <tr> <td>");
-        document.write("<label>");
-        document.write("<input name=\"q1\" type=\"radio\" value=\"Computer\" id=\"q1a1\" />");
-    document.write("</label> <br>");
-    document.write("<h1>" + x2.value + "</h1>");
-}
-
-
-var total =0;
+﻿var total =0;
 var mistake = [];
 mistake[0] = 0;
 var mis = "Your mistakes was: Question  ";
@@ -92,7 +81,7 @@ function ModerateDetail(xml) {
             "<p hidden id='ans" + (i + 1) + "'>" + x[i].getElementsByTagName("right")[0].childNodes[0].nodeValue + "</p> </td></tr>";
         count = count + 1;
     }
-    table+="<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' /><input type='reset' value='Clear' class='but' />" +
+    table+="<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' />" +
         "</p ></td></tr></form >";
     document.getElementById("id").innerHTML = table;
 }
