@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <html xmlns="./Moderate.xml">
+<script src="Moderate.js"></script>
+</head>
+<body onLoad="loadXMLDoc()">
+    <section class="quiz">
+        <table class="container_ce"  id="id" >
+            <caption>
+                <h1>Moderate Quiz</h1>
+            </caption>
+            <form method="post" action="">
+                <h1 hidden id="grade"> </h1>
+                <h2 hidden id="mistake"> </h2>
+                <tr>
+                    <td>
+                        <p>
+
+                            <strong>
+                                Question 1:
+                            </strong>
+                        <p id="question1"> What does CSS stand for? </p>
+
+                        <label id="q1a1">
+                            <input id="q1" type="radio" value="Computer" />
+                            Computer Style Sheets
+                        </label>
+                        <br>
+
+                        <label id="q1a2">
+                            <input id="q1" type="radio" value="cascading" />
+                            Cascading Style Sheets
+                        </label><br>
+
+                        <label id="q1a3">
+                            <input id="q1" type="radio" value="colorful" />
+                            Colorful Style Sheets
+                        </label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+
+                            <strong>
+                                Question 2:
+                            </strong>
+                        <p id="question2"> Which HTML tag is used to define an internal style sheet? </p>
+
+                        <label id="q2a1">
+                            <input type="radio" id="q2" value="style">
+                            &lt;style&gt;
+                        </label><br>
+
+                        <label id="q2a2">
+                            <input type="radio" id="q2" value="css">
+                            &lt;css&gt;
+                        </label><br>
+
+                        <label id="q2a3">
+                            <input type="radio" id="q2" value="script">
+                            &lt;script&gt;
+                        </label>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Question 3:
+                            </strong>
+                        <p id="question3"> Which HTML attribute is used to define inline styles? </p>
+
+                        <label id="q3a1">
+                            <input type="radio" id="q3" value="font">
+                            font
+                        </label><br>
+
+                        <label id="q3a2">
+                            <input type="radio" id="q3" value="class">
+                            class
+                        </label><br>
+
+                        <label id="q3a3">
+                            <input type="radio" id="q3" value="style">
+                            style
+                        </label>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Question 4:
+                            </strong>
+                        <p id="question4"> Which property is used to change the background color? </p>
+
+
+                        <label id="q4a1">
+                            <input type="radio" id="q4" value="color">
+                            color
+                        </label><br>
+                        <label id="q4a2">
+                            <input type="radio" id="q4" value="background-color">
+                            background-color
+                        </label><br>
+                        <label id="q4a3">
+                            <input type="radio" id="q4" value="bgcolor">
+                            bgcolor
+                        </label>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Question 5:
+                            </strong>
+                        <p id="question5"> How do you make the text bold? </p>
+
+                        <label id="q5a1">
+                            <input type="radio" id="q5" value="font">
+                            font:bold;
+                        </label><br>
+                        <label id="q5a2">
+                            <input type="radio" id="q5" value="style">
+                            style:bold;
+                        </label><br>
+                        <label id="q5a3">
+                            <input type="radio" id="q5" value="font-weight">
+                            font-weight:bold;
+                        </label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <input type="submit" value="Submit" class="but" onclick="result()" />
+                            <input type="reset" value="Clear" class="but" />
+                        </p>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </section>
+</body>
+</html>
