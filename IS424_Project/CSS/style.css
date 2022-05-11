@@ -19,11 +19,21 @@ body {
     overflow: hidden;
 }
 
-.container_dis {
-    width: 60%;
+.table_form {
     margin: auto;
     overflow: hidden;
+    text-align: left;
 }
+
+    .table_form td{
+        padding: 5px;
+    }
+
+    .container_dis {
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+    }
 .container_center {
     width: 90%;
     margin: auto;
@@ -36,8 +46,8 @@ body {
 
 .quiz {
     min-height: 500px;
+    min-width:500px;
 }
-
 .contact {
     min-height: 500px;
     margin-top: 100px;
@@ -65,7 +75,7 @@ div.menu {
     right: 4em;
     top: 1.75em;
     position: fixed;
-    min-height: 200px;
+    min-height: 50px;
     overflow: hidden;
     font-size: 22px;
 }
@@ -231,14 +241,36 @@ footer {
             transition: ease-in;
             transition-duration: 0.5s;
         }
-
+#Login {
+    background-color: rgba(0, 128, 128, 0.6);
+    min-height: 500px;
+    text-align: center;
+/*    border-radius: 50px 50px 50px 50px;*/
+    overflow: hidden;
+    height: 100%;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+#login-inner {
+    background-color: darkorange;
+    margin: auto;
+    border-radius: 50px 50px 50px 50px;
+    min-height: 300px;
+    width: 350px;
+    vertical-align: middle;
+    margin-top: 5.5em;
+    padding: 20px;
+}
 .TOC {
     background-color: darkorange;
     text-align: center;
-/*    min-width: 410px;
+    /*    min-width: 410px;
     min-height: 500px;*/
     border-radius: 0 50px 50px 0;
-    overflow: hidden;                                                                                                                               
+    overflow: hidden;
 }
 
     .TOC a {
@@ -310,9 +342,6 @@ iframe {
         margin-right: 15px;
     }
 
-    .quiz {
-        margin-top: 150px;
-    }
 
         .quiz p {
             font-size: 18px;

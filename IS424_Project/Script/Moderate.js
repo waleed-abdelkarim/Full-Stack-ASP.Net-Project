@@ -1,12 +1,12 @@
-﻿var total =0;
+﻿var total = 0;
 var mistake = [];
 mistake[0] = 0;
 var mis = "Your mistakes was: Question  ";
-var mscount =0;
-var count=0;
+var mscount = 0;
+var count = 0;
 
 function result() {
-    
+
     //show and calc answers
 
     for (var i = 0; i < count; i++) {
@@ -23,11 +23,11 @@ function result() {
             total = total + 1;
         }
         else {
-            mistake[mscount++] = (i+1);
+            mistake[mscount++] = (i + 1);
         }
     }
-     if (mistake[0] == 0) {
-        mis="Full mark";
+    if (mistake[0] == 0) {
+        mis = "Full mark";
     }
     else {
         for (var i = 0; i < mscount; i++) {
@@ -39,7 +39,7 @@ function result() {
         }
     }
 
-    window.alert(total+'/5 \n'+mis);
+    window.alert(total + '/5 \n' + mis);
 
 }
 
@@ -55,14 +55,14 @@ function loadXMLDoc() {
     };
 
     // employee.xml is the external xml file
-    xmlhttp.open("GET", "Moderate.xml", true);
+    xmlhttp.open("GET", "../Data/Moderate.xml", true);
     xmlhttp.send();
 }
 
 function ModerateDetail(xml) {
     var i;
     var xmlDoc = xml.responseXML;
-    var table = "<caption><h1> Moderate Quiz</h1></caption ><form method='post' action=''  >";
+    var table = "<caption><h1> Moderate Exam</h1></caption ><form method='post' action=''  >";
     var x = xmlDoc.getElementsByTagName("item");
 
     // Start to fetch the data by using TagName 
@@ -72,23 +72,22 @@ function ModerateDetail(xml) {
     for (i = 0; i < x.length; i++) {
         table += "<tr><td><p>" + "<strong>Question " + (i + 1) + ":</strong ><br/>" +
             "<p>" + x[i].getElementsByTagName("question")[0].childNodes[0].nodeValue + "</p>" +
-            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[i].getElementsByTagName("answer1")[0].childNodes[0].nodeValue +"'/>" + x[i].getElementsByTagName("answer1")[0].childNodes[0].nodeValue + "</label><br>" +
-            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[i].getElementsByTagName("answer2")[0].childNodes[0].nodeValue +"'/> "+ x[i].getElementsByTagName("answer2")[0].childNodes[0].nodeValue + "</label><br>" +
-            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "'type='radio' value='" + x[i].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "'/>" + x[i].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "</label></p>"+
+            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[i].getElementsByTagName("answer1")[0].childNodes[0].nodeValue + "'/>" + x[i].getElementsByTagName("answer1")[0].childNodes[0].nodeValue + "</label><br>" +
+            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[i].getElementsByTagName("answer2")[0].childNodes[0].nodeValue + "'/> " + x[i].getElementsByTagName("answer2")[0].childNodes[0].nodeValue + "</label><br>" +
+            "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "'type='radio' value='" + x[i].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "'/>" + x[i].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "</label></p>" +
             "<p hidden id='ans" + (i + 1) + "'>" + x[i].getElementsByTagName("right")[0].childNodes[0].nodeValue + "</p> </td></tr>";
         count = count + 1;
     }
-    table+="<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' />" +
+    table += "<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' />" +
         "</p ></td></tr></form >";
 
     const tbl = document.createElement("table");
+    tbl.setAttribute("class" , "container_ce");
     tbl.innerHTML = table;
-    document.body.appendChild(tbl);
+    document.body.childNodes[3].childNodes[1].appendChild(tbl);
 }
 
 
-    
 
- 
- 
+
 
