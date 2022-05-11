@@ -26,26 +26,23 @@ function result() {
             mistake[mscount++] = (i+1);
         }
     }
-
-    document.getElementById("grade").innerHTML = total + "/5";
-
-    if (mistake[0] == 0) {
-        document.getElementById("mistake").innerHTML = "Full mark";
+     if (mistake[0] == 0) {
+        mis="Full mark";
     }
     else {
         for (var i = 0; i < mscount; i++) {
             if (i + 1 == mscount)
-                mis += mistake[i] ;
+                mis += mistake[i];
             else {
                 mis += mistake[i] + ",";
             }
         }
-        document.getElementById("mistake").innerHTML = mis;
     }
- 
-    document.getElementById("grade").hidden = false;
-    document.getElementById("mistake").hidden = false;
+
+    window.alert(total+'/5 \n'+mis);
+
 }
+
 
 
 function loadXMLDoc() {
@@ -83,7 +80,10 @@ function ModerateDetail(xml) {
     }
     table+="<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' />" +
         "</p ></td></tr></form >";
-    document.getElementById("id").innerHTML = table;
+
+    const tbl = document.createElement("table");
+    tbl.innerHTML = table;
+    document.body.appendChild(tbl);
 }
 
 
