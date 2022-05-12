@@ -35,7 +35,7 @@
                         <ul>
                             <li><a href="./easy.aspx">Easy</a></li>
                             <li><a href="./moderateExam.aspx">Moderate</a></li>
-                            <li><a href="./expert.aspx">Expert</a></li>
+                            <li><a href="./Expert_Quiz.aspx" onclick="">Expert</a></li>
                         </ul>
                     </li>
 
