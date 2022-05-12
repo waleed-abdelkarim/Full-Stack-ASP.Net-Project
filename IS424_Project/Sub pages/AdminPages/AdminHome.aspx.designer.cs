@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IS424_Project.Sub_pages
+namespace IS424_Project.Sub_pages.Admin
 {
 
 
-    public partial class Home
+    public partial class AdminHome
     {
 
         /// <summary>

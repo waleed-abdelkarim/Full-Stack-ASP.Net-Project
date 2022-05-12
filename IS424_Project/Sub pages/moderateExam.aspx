@@ -5,21 +5,17 @@
   <script src="../Script/Moderate.js">
    </script> 
 	<script type="text/javascript">
-       
         document.onload = loadXMLDoc();
-	   
+
     </script>
 
-    
-
-    <style>
+   <style>
          .container_ce {
 			margin: auto;
 			overflow: hidden;
 			min-height: 500px;
             min-width:500px;
 		}
-
 		.but {
 			background-color: teal;
 			padding: 5px;
@@ -28,12 +24,15 @@
 			color: white;
 			font-weight: bold;
 		}
-
 		.but:hover {
 			background-color: darkorange;
 			padding: 5px;
 			border: 0;
 			font-size: 14px;
+		}
+		.answers{
+			background-color: rgba(144, 238, 144, 0.4);
+			border-radius: 5px;
 		}
     </style>
 </asp:Content>

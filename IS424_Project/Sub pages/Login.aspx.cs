@@ -11,17 +11,12 @@ using System.IO;
 
 namespace IS424_Project.Sub_pages
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-                if (Session["UserName"] != null)
-                {
-                    LoginForm.Style.Add("display", "none");
-                }
-        }
 
+        }
         protected void LoginBtn_Click(object sender, EventArgs e)
         {
             incorrectLabel.Visible = false;
@@ -60,8 +55,5 @@ namespace IS424_Project.Sub_pages
 
         }
 
-
-
-   
-    }
+}
 }

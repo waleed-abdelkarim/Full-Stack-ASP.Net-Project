@@ -1,37 +1,527 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
-<item>
-  <question>
-    Are you ok?
-  </question>
-  <answer1>
-    No
-  </answer1>
-  <answer2>
-    mabye
-  </answer2>
-  <answer3>
-    yes
-  </answer3>
-  <right>
-    No
-  </right>
-</item>
-  <item>
-      <question >
-        Are you ok ok??
-      </question>
-      <answer1>
-        No
-      </answer1>
-      <answer2>
-        mabye
-      </answer2>
-      <answer3>
-        yes
-      </answer3>
-    <right>
-      No
-    </right>
-</item>
+	<item>
+		<question>
+			What does XML stand for?
+		</question>
+		<answer1>
+			eXtra Modern Link
+		</answer1>
+		<answer2>
+			Example Markup Language
+		</answer2>
+		<answer3>
+			eXtensible Markup Language
+		</answer3>
+		<right>
+			eXtensible Markup Language
+		</right>
+	</item>
+	<item>
+		<question>
+			There is a way of describing XML data, how?
+		</question>
+		<answer1>
+			XML uses a DTD to describe the data
+		</answer1>
+		<answer2>
+			XML uses XSL to describe data
+		</answer2>
+		<answer3>
+			XML uses a description node to describe data
+		</answer3>
+		<right>
+			XML uses a DTD to describe the data
+		</right>
+	</item>
+
+	<item>
+		<question >
+			XML's goal is to replace HTML
+		</question>
+		<answer1>
+			True
+		</answer1>
+		<answer2>
+			False
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			False
+		</right>
+	</item>
+	<item>
+		<question >
+			Does DTD stand for Document Type Definition?
+		</question>
+		<answer1>
+			Yes
+		</answer1>
+		<answer2>
+			No
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			Yes
+		</right>
+	</item>
+	<item>
+		<question >
+			Which statement is true?
+		</question>
+		<answer1>
+			All XML elements must be lower case
+		</answer1>
+		<answer2>
+			All XML elements must be properly closed
+		</answer2>
+		<answer3>
+			All the statements are true
+		</answer3>
+		<right>
+			All XML elements must be properly closed
+		</right>
+	</item>
+	<item>
+		<question >
+			Which statement is NOT true?
+		</question>
+		<answer1>
+			XML documents must have a root tag
+		</answer1>
+		<answer2>
+			White-space is not preserved in XML
+		</answer2>
+		<answer3>
+			XML tags are case sensitive
+		</answer3>
+		<right>
+			White-space is not preserved in XML
+		</right>
+	</item>
+	<item>
+		<question >
+			XML preserves white spaces
+		</question>
+		<answer1>
+			False
+		</answer1>
+		<answer2>
+			True
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			True
+		</right>
+	</item>
+	<item>
+		<question >
+			XML elements cannot be empty
+		</question>
+		<answer1>
+			False
+		</answer1>
+		<answer2>
+			True
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			False
+		</right>
+	</item>
+	<item>
+		<question >
+			What does XSL stand for?
+		</question>
+		<answer1>
+			eXtensible Style Listing
+		</answer1>
+		<answer2>
+			eXpandable Style Language
+		</answer2>
+		<answer3>
+			eXtensible Stylesheet Language
+		</answer3>
+		<right>
+			eXtensible Stylesheet Language
+		</right>
+	</item>
+	<item>
+		<question >
+			XML attribute values must always be enclosed in quotes
+		</question>
+		<answer1>
+			False
+		</answer1>
+		<answer2>
+			True
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			True
+		</right>
+	</item>
+
+	<item>
+		<question >
+			Which statement is true?
+		</question>
+		<answer1>
+			Attributes must always be present
+		</answer1>
+		<answer2>
+			Attributes must occur in defined order
+		</answer2>
+		<answer3>
+			None of the other two statements are true
+		</answer3>
+		<right>
+			None of the other two statements are true
+		</right>
+	</item>
+	<item>
+		<question >
+			What are XML entities used for?
+		</question>
+		<answer1>
+			Entities define shortcuts to standard elements
+		</answer1>
+		<answer2>
+			Entities define shortcuts to standard attributes
+		</answer2>
+		<answer3>
+			Entities define shortcuts to standard text or special characters
+		</answer3>
+		<right>
+			Entities define shortcuts to standard text or special characters
+		</right>
+	</item>
+
+	<item>
+		<question >
+			What is an XML instance?
+		</question>
+		<answer1>
+			An XML attribute
+		</answer1>
+		<answer2>
+			An XML element
+		</answer2>
+		<answer3>
+			An XML document
+		</answer3>
+		<right>
+			An XML document
+		</right>
+	</item>
+	<item>
+		<question >
+			Which XML DOM object represents a node in the node tree?
+		</question>
+		<answer1>
+			The nodeList object
+		</answer1>
+		<answer2>
+			The node object
+		</answer2>
+		<answer3>
+			The document object
+		</answer3>
+		<right>
+			The node object
+		</right>
+	</item>
+
+	<item>
+		<question >
+			The external JavaScript file must contain the script tag.
+		</question>
+		<answer1>
+			True
+		</answer1>
+		<answer2>
+			False
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			False
+		</right>
+	</item>
+	<item>
+		<question >
+			How do you write "Hello World" in an alert box?
+		</question>
+		<answer1>
+			msgBox("Hello World");
+		</answer1>
+		<answer2>
+			alert("Hello World");
+		</answer2>
+		<answer3>
+			alertBox("Hello World");
+		</answer3>
+		<right>
+			alert("Hello World");
+		</right>
+	</item>
+
+	<item>
+		<question >
+			How do you create a function in JavaScript?
+		</question>
+		<answer1>
+			function = myFunction()
+		</answer1>
+		<answer2>
+			function:myFunction()
+		</answer2>
+		<answer3>
+			function myFunction()
+		</answer3>
+		<right>
+			function myFunction()
+		</right>
+	</item>
+	<item>
+		<question >
+			How do you call a function named "myFunction"?
+		</question>
+		<answer1>
+			call function myFunction()
+		</answer1>
+		<answer2>
+			call myFunction()
+		</answer2>
+		<answer3>
+			myFunction()
+		</answer3>
+		<right>
+			myFunction()
+		</right>
+	</item>
+
+	<item>
+		<question >
+			How to write an IF statement in JavaScript?
+		</question>
+		<answer1>
+			if i = 5
+		</answer1>
+		<answer2>
+			if (i == 5)
+		</answer2>
+		<answer3>
+			if i == 5 then
+		</answer3>
+		<right>
+			if (i == 5)
+		</right>
+	</item>
+	<item>
+		<question >
+			How to write an IF statement for executing some code if "i" is NOT equal to 5?
+		</question>
+		<answer1>
+			if (i != 5)
+		</answer1>
+		<answer2>
+			if i =! 5 then
+		</answer2>
+		<answer3>
+			if i !== 5
+		</answer3>
+		<right>
+			if (i != 5)
+		</right>
+	</item>
+
+	<item>
+		<question >
+			How does a WHILE loop start?
+		</question>
+		<answer1>
+			while i = 1 to 10
+		</answer1>
+		<answer2>
+			while (i &lt;= 10)
+		</answer2>
+		<answer3>
+			while (i &lt;= 10 ;i++)
+		</answer3>
+		<right>
+			while (i &lt;= 10)
+		</right>
+	</item>
+	<item>
+		<question >
+			How does a FOR loop start?
+		</question>
+		<answer1>
+			for (i = 0; i &lt;= 5)
+		</answer1>
+		<answer2>
+			for i = 1 to 5
+		</answer2>
+		<answer3>
+			for (i = 0; i &lt;= 5; i++)
+		</answer3>
+		<right>
+			for (i = 0; i &lt;= 5; i++)
+		</right>
+	</item>
+
+	<item>
+		<question >
+			How can you add a comment in a JavaScript?
+		</question>
+		<answer1>
+			//This is a comment
+		</answer1>
+		<answer2>
+			'This is a comment
+		</answer2>
+		<answer3>
+			(!This is a comment)
+		</answer3>
+		<right>
+			//This is a comment
+		</right>
+	</item>
+	<item>
+		<question >
+			What is the correct way to write a JavaScript array?
+		</question>
+		<answer1>
+			var colors = "red", "green", "blue"
+		</answer1>
+		<answer2>
+			var colors = (1:"red", 2:"green", 3:"blue")
+		</answer2>
+		<answer3>
+			var colors = ["red", "green", "blue"]
+		</answer3>
+		<right>
+			var colors = ["red", "green", "blue"]
+		</right>
+	</item>
+
+	<item>
+		<question >
+			How do you round the number 7.25, to the nearest integer?
+		</question>
+		<answer1>
+			Math.round(7.25)
+		</answer1>
+		<answer2>
+			rnd(7.25)
+		</answer2>
+		<answer3>
+			Math.rnd(7.25)
+		</answer3>
+		<right>
+			Math.round(7.25)
+		</right>
+	</item>
+	<item>
+		<question >
+			How do you find the number with the highest value of x and y?
+		</question>
+		<answer1>
+			Math.max(x, y)
+		</answer1>
+		<answer2>
+			top(x, y)
+		</answer2>
+		<answer3>
+			ceil(x, y)
+		</answer3>
+		<right>
+			Math.max(x, y)
+		</right>
+	</item>
+
+	<item>
+		<question >
+			JavaScript is the same as Java.
+		</question>
+		<answer1>
+			True
+		</answer1>
+		<answer2>
+			False
+		</answer2>
+		<answer3>
+			...
+		</answer3>
+		<right>
+			False
+		</right>
+	</item>
+	<item>
+		<question >
+			How can you detect the client's browser name?
+		</question>
+		<answer1>
+			client.navName
+		</answer1>
+		<answer2>
+			navigator.appName
+		</answer2>
+		<answer3>
+			browser.name
+		</answer3>
+		<right>
+			navigator.appName
+		</right>
+	</item>
+
+	<item>
+		<question >
+			Which event occurs when the user clicks on an HTML element?
+		</question>
+		<answer1>
+			onclick
+		</answer1>
+		<answer2>
+			onchange
+		</answer2>
+		<answer3>
+			onmouseclick
+		</answer3>
+		<right>
+			onclick
+		</right>
+	</item>
+
+	<item>
+		<question >
+			Which operator is used to assign a value to a variable?
+		</question>
+		<answer1>
+			*
+		</answer1>
+		<answer2>
+			=
+		</answer2>
+		<answer3>
+			+
+		</answer3>
+		<right>
+			=
+		</right>
+	</item>
+
+
 </quiz>

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Users1.accdb" />
     <Content Include="Data\Moderate.xml" />
     <Content Include="img\asp.png" />
     <Content Include="img\w3_ajax.png" />
@@ -74,6 +75,8 @@
     <Content Include="img\w3_xml.png" />
     <Content Include="img\xml.png" />
     <Content Include="Script\Moderate.js" />
+    <Content Include="Sub pages\AdminPages\AdminHome.aspx" />
+    <Content Include="Sub pages\AdminPages\mngUsers.aspx" />
     <Content Include="Sub pages\contact_old.html" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
@@ -91,13 +94,16 @@
     <Content Include="img\w3_js.png" />
     <Content Include="img\web.png" />
     <Content Include="Sub pages\CSS.aspx" />
+    <Content Include="Sub pages\Exams.aspx" />
     <Content Include="Sub pages\Home.aspx" />
     <Content Include="Sub pages\HTML.aspx" />
     <Content Include="Sub pages\JS.aspx" />
     <Content Include="Sub pages\Learn.aspx" />
     <Content Include="Sub pages\LearnASP.aspx" />
+    <Content Include="Sub pages\Login.aspx" />
     <Content Include="Sub pages\moderate.aspx" />
     <Content Include="Sub pages\moderateExam.aspx" />
+    <Content Include="Sub pages\signup.aspx" />
     <Content Include="Sub pages\XML_Ajax.aspx" />
     <Content Include="Sub pages\css_Exam_old.html" />
     <Content Include="Sub pages\html_Exam_old.html" />
@@ -105,6 +111,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -116,12 +129,33 @@
     <Compile Include="masterPage.Master.designer.cs">
       <DependentUpon>masterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Sub pages\AdminPages\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\AdminPages\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\AdminPages\mngUsers.aspx.cs">
+      <DependentUpon>mngUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\AdminPages\mngUsers.aspx.designer.cs">
+      <DependentUpon>mngUsers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sub pages\CSS.aspx.cs">
       <DependentUpon>CSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sub pages\CSS.aspx.designer.cs">
       <DependentUpon>CSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\Exams.aspx.cs">
+      <DependentUpon>Exams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\Exams.aspx.designer.cs">
+      <DependentUpon>Exams.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -158,6 +192,13 @@
     <Compile Include="Sub pages\LearnASP.aspx.designer.cs">
       <DependentUpon>LearnASP.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sub pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sub pages\moderate.aspx.cs">
       <DependentUpon>moderate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +212,13 @@
     </Compile>
     <Compile Include="Sub pages\moderateExam.aspx.designer.cs">
       <DependentUpon>moderateExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\XML_Ajax.aspx.cs">
       <DependentUpon>XML_Ajax.aspx</DependentUpon>
@@ -202,6 +250,7 @@
     <Content Include="Files\XML_Ajax\IS446-chap15.pdf" />
     <Content Include="Files\ASP\ch25ASP.NET.zip" />
     <Content Include="Files\ASP\IS446-chap25.pdf" />
+    <Content Include="AdminMaster.Master" />
     <None Include="packages.config" />
     <Content Include="masterPage.Master" />
     <None Include="Web.Debug.config">

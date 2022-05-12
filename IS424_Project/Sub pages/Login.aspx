@@ -1,7 +1,6 @@
-﻿<%@ Page Title="IS424 | Welcome"  Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" Inherits="IS424_Project.Sub_pages.Home" Codebehind="Home.aspx.cs" %>
+﻿<%@ Page Title="IS424 | Login" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" Inherits="IS424_Project.Sub_pages.Login" Codebehind="Login.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>IS424 | Welcome</title>
-	<link rel="icon" href="../img/web.png" />
+    <link rel="icon" href="../img/web.png" />
     <style type="text/css">
         .auto_style1 {
             font-weight: bold;
@@ -13,8 +12,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section id="description" style="background-image:url('../img/poster.jpg');">
-		<form id="LoginForm" runat="server">
+    <section id="description" style="background-image:url('../img/poster.jpg'); min-height: 600px;">
+		<form id="LoginForm" style="min-height: 600px;" runat="server">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
             <div id="login_inner" >
             <h2>Log in</h2>
             <br />
@@ -53,28 +53,4 @@
         </form>
 
 	</section>
-
-	<section class="boxes">
-			<a href="./Learn.aspx">
-				<div class="box">
-					<img src="../img/web.png">
-					<h2>Learning center</h2>
-					<p>Here you will find a good resources to learn</p>
-				</div>
-			</a>
-
-			<a href="./Exams.aspx">
-				<div class="box">
-					<img src="../img/exams.png">
-					<h2>Exams Center</h2>
-					<p>Here you will be able to test your knowledge</p>
-				</div>
-			</a>
-
-			
-			<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
-
-
-	</section>
-     
 </asp:Content>
