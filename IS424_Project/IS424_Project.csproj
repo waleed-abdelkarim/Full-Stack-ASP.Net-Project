@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.accdb" />
     <Content Include="App_Data\Users1.accdb" />
     <Content Include="Data\Moderate.xml" />
     <Content Include="img\asp.png" />
@@ -95,6 +96,10 @@
     <Content Include="img\web.png" />
     <Content Include="Sub pages\CSS.aspx" />
     <Content Include="Sub pages\Exams.aspx" />
+    <Content Include="Sub pages\Expert_Quiz.aspx" />
+    <Content Include="Sub pages\Expert_Quiz.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="Sub pages\Home.aspx" />
     <Content Include="Sub pages\HTML.aspx" />
     <Content Include="Sub pages\JS.aspx" />

@@ -150,13 +150,13 @@
                 	</p>
 
 						<p>
+	        				<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" ProviderName="<%$ ConnectionStrings:ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM [Questions]"></asp:SqlDataSource>
 	        				&nbsp;
                             <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
 &nbsp;
                             <asp:Button ID="ClearButton" runat="server" Text="Clear" />
 &nbsp;
                             <asp:Button ID="ShuffleButton" runat="server" Text="Shuffle" />
-		         		    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 		         		</p>   
 
 
