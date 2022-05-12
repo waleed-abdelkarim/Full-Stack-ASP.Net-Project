@@ -97,6 +97,8 @@
     <Content Include="Sub pages\Exams.aspx" />
     <Content Include="Sub pages\Home.aspx" />
     <Content Include="Sub pages\HTML.aspx" />
+    <Content Include="Sub pages\Moderate.html" />
+    <Content Include="Sub pages\Moderate.js" />
     <Content Include="Sub pages\JS.aspx" />
     <Content Include="Sub pages\Learn.aspx" />
     <Content Include="Sub pages\LearnASP.aspx" />
