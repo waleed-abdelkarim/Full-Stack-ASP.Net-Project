@@ -306,7 +306,7 @@
     </answer2>
     <answer3>Math.rnd(7.25)
     </answer3>
-    <right>Math.round(7.25)  
+    <right>Math.round(7.25)
     </right>
   </item>
   <item>
