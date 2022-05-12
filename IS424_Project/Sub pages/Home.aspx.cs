@@ -52,7 +52,7 @@ namespace IS424_Project.Sub_pages
                 }
                 else if (Session["class"].Equals("Admin"))
                 {
-                    Response.Redirect("./Learn.aspx");
+                    Response.Redirect("./AdminPages/AdminHome.aspx");
                 }
             }
 
