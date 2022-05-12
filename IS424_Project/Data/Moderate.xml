@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
-<<<<<<< HEAD
 	<item>
 		<question>
 			What does XML stand for?
@@ -898,7 +897,4 @@
     <right>=
     </right>
   </item>
-  
-  
->>>>>>> b333887f45a8f9d2c106cb0b4d3cb8f8b00ce40c
 </quiz>

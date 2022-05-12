@@ -19,10 +19,6 @@ function result() {
                 right_val = right[x].value;
             }
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> b333887f45a8f9d2c106cb0b4d3cb8f8b00ce40c
         if (document.getElementById("ans" + (i + 1) + "").textContent == right_val) {
             total = total + 1;
         }
@@ -43,11 +39,6 @@ function result() {
         }
     }
     window.alert(total + '/10 \n' + mis);
-<<<<<<< HEAD
-=======
-    
-    
->>>>>>> b333887f45a8f9d2c106cb0b4d3cb8f8b00ce40c
 
 }
 
@@ -79,17 +70,12 @@ function ModerateDetail(xml) {
     for (var y = 0; y < 10; y++) {
         if (used.includes(ranum)) {
             ranum = Math.floor(Math.random() * 31);
-<<<<<<< HEAD
             y = y - 1;
-=======
-            y=y-1;
->>>>>>> b333887f45a8f9d2c106cb0b4d3cb8f8b00ce40c
         }
         else {
             used.push(ranum);
         }
     }
-<<<<<<< HEAD
 
     var counter = 0;
     try {
@@ -107,25 +93,6 @@ function ModerateDetail(xml) {
         table += "<tr><td><p><input type='submit' value='Submit' id='submitbut' class='but' onclick='result()' />" +
             "</p ></td></tr></form >";
 
-=======
-    
-    var counter = 0;
-    try {
-        // Print the xml data in table form
-        for (i = 0; i < 10; i++) {
-            table += "<tr><td><p>" + "<strong>Question " + (i + 1) + ":</strong ><br/>" +
-                "<p>" + x[used[counter]].getElementsByTagName("question")[0].childNodes[0].nodeValue + "</p>" +
-                "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[used[counter]].getElementsByTagName("answer1")[0].childNodes[0].nodeValue + "'/>" + x[used[counter]].getElementsByTagName("answer1")[0].childNodes[0].nodeValue + "</label><br>" +
-                "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "' type='radio' value='" + x[used[counter]].getElementsByTagName("answer2")[0].childNodes[0].nodeValue + "'/> " + x[used[counter]].getElementsByTagName("answer2")[0].childNodes[0].nodeValue + "</label><br>" +
-                "<label>" + "<input name='q" + (i + 1) + "' id='q" + (i + 1) + "'type='radio' value='" + x[used[counter]].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "'/>" + x[used[counter]].getElementsByTagName("answer3")[0].childNodes[0].nodeValue + "</label></p>" +
-                "<p hidden id='ans" + (i + 1) + "'>" + x[used[counter]].getElementsByTagName("right")[0].childNodes[0].nodeValue + "</p> </td></tr>";
-            count = count + 1;
-            counter = counter + 1;
-        }
-        table += "<tr><td><p><input type='submit' value='Submit' class='but' onclick='result()' />" +
-            "</p ></td></tr></form >";
-
->>>>>>> b333887f45a8f9d2c106cb0b4d3cb8f8b00ce40c
         const tbl = document.createElement("table");
         tbl.setAttribute("class", "container_ce");
         tbl.innerHTML = table;
@@ -135,9 +102,4 @@ function ModerateDetail(xml) {
         ModerateDetail(xml);
     }
 }
-
-
-
-
-
 
