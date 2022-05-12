@@ -7,14 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace IS424_Project.Sub_pages
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class moderateExam : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LoginBtn_Click(object sender, EventArgs e)
         {
 
         }

@@ -67,11 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Moderate.xml" />
     <Content Include="img\asp.png" />
     <Content Include="img\w3_ajax.png" />
     <Content Include="img\w3_asp.png" />
     <Content Include="img\w3_xml.png" />
     <Content Include="img\xml.png" />
+    <Content Include="Script\Moderate.js" />
     <Content Include="Sub pages\contact_old.html" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
@@ -96,7 +98,8 @@
     <Content Include="Sub pages\JS.aspx" />
     <Content Include="Sub pages\Learn.aspx" />
     <Content Include="Sub pages\LearnASP.aspx" />
-    <Content Include="Sub pages\Moderate.xml" />
+    <Content Include="Sub pages\moderate.aspx" />
+    <Content Include="Sub pages\moderateExam.aspx" />
     <Content Include="Sub pages\XML_Ajax.aspx" />
     <Content Include="Sub pages\css_Exam_old.html" />
     <Content Include="Sub pages\html_Exam_old.html" />
@@ -157,6 +160,20 @@
     <Compile Include="Sub pages\LearnASP.aspx.designer.cs">
       <DependentUpon>LearnASP.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sub pages\moderate.aspx.cs">
+      <DependentUpon>moderate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\moderate.aspx.designer.cs">
+      <DependentUpon>moderate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\moderateExam.aspx.cs">
+      <DependentUpon>moderateExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\moderateExam.aspx.designer.cs">
+      <DependentUpon>moderateExam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sub pages\XML_Ajax.aspx.cs">
       <DependentUpon>XML_Ajax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,7 +214,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

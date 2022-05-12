@@ -1,17 +1,38 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.Master.cs" Inherits="IS424_Project.Site1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="moderate.aspx.cs" Inherits="IS424_Project.Sub_pages.moderate" %>
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-<body >
+        <script src="../Script/Moderate.js" >
+    </script>
+	<link rel="stylesheet" href="../CSS/style.css"/>
+    <style>
+         .container_ce {
+			margin: auto;
+			overflow: hidden;
+		}
 
-    <header>
+		.but {
+			background-color: teal;
+			padding: 5px;
+			border: 0;
+			font-size: 14px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.but:hover {
+			background-color: darkorange;
+			padding: 5px;
+			border: 0;
+			font-size: 14px;
+		}
+    </style>
+</head>
+<body  onload="loadXMLDoc();">
+       <header>
         <div class="container">
             <h1 id="logo"><a href="./Home.aspx" style="color: darkorange; text-decoration: none">IS424</a> Web
 				Application Development
@@ -46,10 +67,11 @@
         </div>
     </header>
 
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+    <section>
+
+
+    </section>
+
 
     <footer style="margin-top: 100px;">
         <div class="container" style="margin-top: 20px; text-align: center;">
@@ -73,6 +95,5 @@
             <p>IS424 Web Application Development,<span style="color: darkorange;"> Copyright &copy; 2022 </span></p>
         </div>
     </footer>
-
 </body>
 </html>
