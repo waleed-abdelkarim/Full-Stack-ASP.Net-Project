@@ -28,32 +28,29 @@ namespace IS424_Project.Sub_pages
             String userName = TB_UserName.Text;
             String password = TB_Password.Text;
 
-            SqlDataSource1.SelectCommand = "Select * from Users where UserName = '" + userName + "'" +
-                                        " and Password = '" + password + "'";
+            SqlDataSource1.SelectCommand = $"Select * from Users where [Username] = '{userName}'" +
+                                        $" and [Password] = '{password}'";
 
             DataView dv = (DataView)SqlDataSource1.Select(new DataSourceSelectArguments());
             DataTable dt = dv.ToTable();
 
             if (dt.Rows.Count <= 0)
-            {
                 incorrectLabel.Visible = true;
-            }
             else
             {
                 foreach (DataRow dr in dt.Rows)
                 {
-                    Session["UserName"] = dr[1].ToString();
-                    Session["class"] = dr[3].ToString();
+                    Session["Username"] = dr[1].ToString();
+                    Session["name"] = dr[2].ToString();
+                    Session["class"] = dr[4].ToString();
+                    Session["level"] = dr[5].ToString();
+                    //Content3.user.Style.Add("display", "inline");
                 }
 
                 if (Session["class"].Equals("Student"))
-                {
-                    Response.Redirect("./Exam.aspx");
-                }
+                    Response.Redirect("./Exams.aspx");
                 else if (Session["class"].Equals("Admin"))
-                {
                     Response.Redirect("./AdminPages/AdminHome.aspx");
-                }
             }
 
 

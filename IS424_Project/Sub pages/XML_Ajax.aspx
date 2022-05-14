@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="Learn XML & Ajax" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeFile="XML_Ajax.aspx.cs" Inherits="IS424_Project.Sub_pages.XML_Ajax" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 	<link rel="icon" href="../img/xml.png" />
+	<script src="../../Script/readToPages.js">
+    </script> 
 	<style type="text/css">
+
         iframe {
             overflow: hidden;
             display: block;
@@ -16,34 +19,6 @@
     </div>
     <section id="description" style="background-image:url('../img/poster.jpg');">
 			<div class="TOC" style="float: left;">
-			<h2><a href="#XML_lectures">Lectures</a></h2>
-			<ul>
-				<li>
-					<a href="#ch14">XML</a>
-				</li>
-				<li>
-					<a href="#ch15">Ajax-EnabledRich Internet Applications</a>
-				</li>
-			</ul>
-				
-			<h2><a href="#XML_resources">Resources</a></h2>
-			<ul>
-				<li>
-					<a href="#xmaj1">AJAX Crash Course (Vanilla JavaScript)</a>
-				</li>
-				<li>
-					<a href="#xmaj2">AJAX Tutorial</a>
-				</li>
-				<li>
-					<a href="#xmaj3">XML Video Tutorial</a>
-				</li>
-				<li>
-					<a href="#xmaj4">W3Schools | XML Tutorial</a>
-				</li>
-				<li>
-					<a href="#xmaj5">W3Schools | Ajax Tutorial</a>
-				</li>
-			</ul>
 		</div>
 
 		<div class="container_dis">
@@ -63,69 +38,17 @@
 	</section>
 
 	<section>
-		<table border="0" class="container_table" >
+		<table border="0" class="container_table" id="lec" >
 			 <caption id="XML_lectures"><h1 style="font-size:40px">Lectures</h1></caption>
-			<tr>
-				<td class="frame_box" id="ch14">
-					<h2>XML</h2>
-					<embed src="../Files/XML_Ajax/IS446-chap14.pdf" width="100%" height="530px">
-					<p>To download The slides click <a href="../Files/XML_Ajax/IS446-chap14.pdf" target="_blank">here</a> and
-						to download the labs click <a href="../Files/XML_Ajax/ch14XML.zip">here</a></p>
-				</td>
-			</tr>
-			<tr>
-				<td class="frame_box" id="ch15">
-					<h2>Ajax-EnabledRich Internet Applications</h2>
-					<embed src="../Files/XML_Ajax/IS446-chap15.pdf" width="100%" height="530px">
-					<p>To download The slides click <a href="../Files/CSS/IS446-chap15.pdf" target="_blank">here</a></p>
-				</td>
-			</tr>
 		</table>
 	</section>
 	<section>
 
-        <table border="0" class="container_table">
+        <table border="0" class="container_table" id="res">
 			 <caption id="XML_resources"><h1 style="font-size:40px">Resources</h1></caption>
-          <tr>
-				<td class="frame_box" id="xmaj1">
-					<h2>AJAX Crash Course (Vanilla JavaScript)</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/82hnvUYY6QA"
-						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-						clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</tr>
-
-			<tr>
-				<td class="frame_box" id="xmaj2">
-					<h2>AJAX Tutorial</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLE0071B4091E8948D"
-						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-						encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</td>
-			</tr>
-			<tr>
-				<td class="frame_box" id="xmaj3">
-					<h2>XML Video Tutorial</h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBB413675AFBDC1F4"
-						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-						gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</td>
-			</tr>
-			<tr>
-				<td class="frame_box" id="xmaj4">
-					<h2>W3Schools | XML Tutorial</h2>
-					<a href="https://www.w3schools.com/xml/default.asp" target="_blank">
-						<img src="../img/w3_xml.png" alt="w3schools photo">
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="frame_box" id="xmaj5">
-					<h2>W3Schools | Ajax Tutorial</h2>
-					<a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">
-						<img src="../img/w3_ajax.png" alt="w3schools photo">
-					</a>
-				</td>
-			</tr>
         </table>
     </section>
+	<script type="text/javascript">
+        loadXMLDoc("../Data/XML_Ajax.xml");
+    </script>
 </asp:Content>

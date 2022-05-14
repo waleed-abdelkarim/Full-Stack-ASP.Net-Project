@@ -14,7 +14,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section id="description" style="background-image:url('../img/poster.jpg'); min-height: 600px;">
 		<form id="LoginForm" style="min-height: 600px;" runat="server">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UsersConn %>" ProviderName="<%$ ConnectionStrings:UsersConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
             <div id="login_inner" >
             <h2>Log in</h2>
             <br />
@@ -34,7 +34,7 @@
             <tr>
                 <td class="auto-style1" colspan="2" style="text-align:center;">
                     
-                    <asp:Label ID="incorrectLabel" runat="server" Font-Size="Large" Text="The username or password you provided is incorrect" Visible="False"></asp:Label>
+                    <asp:Label ID="incorrectLabel" runat="server" Font-Size="Large" Text="The username or password you provided is incorrect"></asp:Label>
                     
                 </td>
             </tr>
@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align:center;">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx" ForeColor="White">New User? SignUp</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="./signup.aspx" ForeColor="White">New User? SignUp</asp:HyperLink>
                 </td>
             </tr>
         </table>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="IS424 | Welcome"  Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" Inherits="IS424_Project.Sub_pages.Home" Codebehind="Home.aspx.cs" %>
+﻿<%@ Page Title="IS424 | Welcome"  Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.Home" Codebehind="Home.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>IS424 | Welcome</title>
 	<link rel="icon" href="../img/web.png" />
@@ -10,9 +10,27 @@
         .auto-style1 {
             color: #FF0000;
         }
+        header img {
+            display: none;
+            position: absolute;
+            top: 1.5em;
+            left: 1.5em;
+            width: 40px;
+            height: 40px;
+        }
+        #Content3{
+            display: none;
+            position: absolute;
+            top: 1.5em;
+            left: 1.5em;
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ 
+     
     <section id="description" style="background-image:url('../img/poster.jpg');">
 		<form id="LoginForm" runat="server">
             <div id="login_inner" >

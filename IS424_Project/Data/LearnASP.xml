@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<File>
+	<TOC>
+		<id1>ASP_lectures</id1>
+		<id2>ASP_resources</id2>
+	</TOC>
+	<Lectures>
+		<item>
+			<id>ch25</id>
+			<title>ASP.NET 2.0 and ASP.NET Ajax</title>
+			<filesrc>../Files/ASP/IS446-chap25.pdf</filesrc>
+			<labsrc>../Files/ASP/ch25ASP.NET.zip</labsrc>
+		</item>
+	</Lectures>
+	
+	<Resources>
+		<item>
+			<id>asp1</id>
+			<title>Learn ASP.NET Core MVC (.NET 6) - Full Course</title>
+			<websrc>https://www.youtube.com/embed/hZ1DASYd9rk</websrc>
+		</item>
+		<item>
+			<id>asp2</id>
+			<title>ASP.NET Core Crash Course - C# App in One Hour</title>
+			<websrc>https://www.youtube.com/embed/BfEjDD8mWYg</websrc>
+		</item>
+	</Resources>
+</File>

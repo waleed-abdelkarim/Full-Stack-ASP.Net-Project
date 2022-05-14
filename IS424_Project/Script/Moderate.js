@@ -7,7 +7,7 @@ function result() {
     var mis = "Your mistakes was: Question  ";
     var mscount = 0;
 
-
+    
     document.getElementById("submitbut").disabled = true;
     //show and calc answers
     for (var i = 0; i < count; i++) {

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<File>
+	<TOC>
+		<id1>JS_lectures</id1>
+		<id2>JS_resources</id2>
+	</TOC>
+	<Lectures>
+		<item>
+			<id>ch6</id>
+			<title>JavaScript: Introduction to Scripting</title>
+			<filesrc>../Files/JS/IS446-chap06.pdf</filesrc>
+			<labsrc>../Files/JS/ch06IntroToJavaScript.zip</labsrc>
+		</item>
+		<item>
+			<id>ch7</id>
+			<title>JavaScript: Control Statements I</title>
+			<filesrc>../Files/JS/IS446-chap07.pdf</filesrc>
+			<labsrc>../Files/JS/ch07JavaScriptControlStatements1.zip</labsrc>
+		</item>
+		<item>
+			<id>ch8</id>
+			<title>JavaScript: Control Statements II</title>
+			<filesrc>../Files/JS/IS446-chap08.pdf</filesrc>
+			<labsrc>../Files/JS/ch08JavaScriptControlStatements2.zip</labsrc>
+		</item>
+		<item>
+			<id>ch9</id>
+			<title>JavaScript: Functions</title>
+			<filesrc>../Files/JS/IS446-chap09.pdf</filesrc>
+			<labsrc>../Files/JS/ch09JavaScriptFunctions.zip</labsrc>
+		</item>
+		<item>
+			<id>ch10</id>
+			<title>JavaScript: Arrays</title>
+			<filesrc>../Files/JS/IS446-chap10.pdf</filesrc>
+			<labsrc>../Files/JS/ch10JavaScriptArrays.zip</labsrc>
+		</item>
+		<item>
+			<id>ch11</id>
+			<title>JavaScript: Objects</title>
+			<filesrc>../Files/JS/IS446-chap11.pdf</filesrc>
+			<labsrc>../Files/JS/ch11JavaScriptObjects.zip</labsrc>
+		</item>
+	</Lectures>
+
+	<Resources>
+		<item>
+			<id>JS1</id>
+			<title>JavaScript Tutorial for Beginners</title>
+			<websrc>https://www.youtube.com/embed/W6NZfCO5SIk</websrc>
+		</item>
+		<item>
+			<id>JS2</id>
+			<title>JavaScript for Beginners</title>
+			<websrc>https://www.youtube.com/embed/videoseries?list=PLzMcBGfZo4-njtc5xy3qli4cN2zlKsoxd</websrc>
+		</item>
+	</Resources>
+</File>

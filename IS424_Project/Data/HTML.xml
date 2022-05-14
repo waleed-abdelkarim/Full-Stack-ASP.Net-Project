@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<File>
+	<TOC>
+		<id1>HTML_lectures</id1>
+		<id2>HTML_resources</id2>
+	</TOC>
+	<Lectures>
+		<item>
+			<id>ch4</id>
+			<title>Introduction to XHTML</title>
+			<filesrc>../Files/HTML/IS446-chap04.pdf</filesrc>
+			<labsrc>../Files/html/ch04XHTML.zip</labsrc>
+		</item>
+	</Lectures>
+	
+	<Resources>
+		<item>
+			<id>ht1</id>
+			<title>HTML Full Course - Build a Website Tutorial</title>
+			<websrc>https://www.youtube.com/embed/pQN-pnXPaVg</websrc>
+		</item>
+		<item>
+			<id>ht2</id>
+			<title>HTML Crash Course For Absolute Beginners</title>
+			<websrc>https://www.youtube.com/embed/UB1O30fR-EE</websrc>
+		</item>
+	</Resources>
+</File>

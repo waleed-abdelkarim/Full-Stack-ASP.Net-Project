@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<File>
+	<TOC>
+		<id1>XML_lectures</id1>
+		<id2>XML_resources</id2>
+	</TOC>
+	<Lectures>
+		<item>
+			<id>ch14</id>
+			<title>XML</title>
+			<filesrc>../Files/XML_Ajax/IS446-chap14.pdf</filesrc>
+			<labsrc>../Files/XML_Ajax/ch14XML.zip</labsrc>
+		</item>
+		<item>
+			<id>ch15</id>
+			<title>Ajax-Enabled Rich Internet Applications</title>
+			<filesrc>../Files/XML_Ajax/IS446-chap15.pdf</filesrc>
+			<labsrc></labsrc>
+		</item>
+	</Lectures>
+	
+	<Resources>
+		<item>
+			<id>xmaj1</id>
+			<title>AJAX Crash Course (Vanilla JavaScript)</title>
+			<websrc>https://www.youtube.com/embed/82hnvUYY6QA</websrc>
+		</item>
+		<item>
+			<id>xmaj2</id>
+			<title>AJAX Tutorial</title>
+			<websrc>https://www.youtube.com/embed/videoseries?list=PLE0071B4091E8948D</websrc>
+		</item>
+		<item>
+			<id>xmaj3</id>
+			<title>XML Video Tutorial</title>
+			<websrc>https://www.youtube.com/embed/videoseries?list=PLBB413675AFBDC1F4</websrc>
+		</item>
+	</Resources>
+</File>

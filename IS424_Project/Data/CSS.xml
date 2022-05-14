@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<File>
+	<TOC>
+		<id1>CSS_lectures</id1>
+		<id2>CSS_resources</id2>
+	</TOC>
+	<Lectures>
+		<item>
+			<id>ch5</id>
+			<title>Cascading Style Sheets™ (CSS)</title>
+			<filesrc>../Files/CSS/IS446-chap05.pdf</filesrc>
+			<labsrc>../Files/CSS/ch05CSS.zip</labsrc>
+		</item>
+	</Lectures>
+	
+	<Resources>
+		<item>
+			<id>cs1</id>
+			<title>CSS Tutorial - Zero to Hero (Complete Course)</title>
+			<websrc>https://www.youtube.com/embed/1Rs2ND1ryYc</websrc>
+		</item>
+		<item>
+			<id>cs2</id>
+			<title>CSS Crash Course For Absolute Beginners</title>
+			<websrc>https://www.youtube.com/embed/yfoY53QXEnI</websrc>
+		</item>
+	</Resources>
+</File>

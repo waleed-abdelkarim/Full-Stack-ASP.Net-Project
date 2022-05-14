@@ -8,10 +8,20 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="./CSS/style.css">
+     
 </head>
 <body >
 
     <header>
+        <div class="user">
+            <ul>
+                <li><div id="username"></div>
+                     <ul>
+                        <li><a href="./AdminHome.aspx">Home</a></li>
+                     </ul>
+                </li>
+            </ul>
+        </div>
         <div class="container">
             <h1 id="logo"><a href="./AdminHome.aspx" style="color: darkorange; text-decoration: none">IS424</a> Web
 				Application Development
@@ -22,24 +32,10 @@
                     <li><a href="./AdminHome.aspx">Home</a></li>
 
                     <li><a href="./mngUsers.aspx">Users</a>
-                        <ul>
-                            <li><a href="./HTML.aspx">HTML</a></li>
-                            <li><a href="./CSS.aspx">CSS</a></li>
-                            <li><a href="./JS.aspx">JavaScript</a></li>
-                            <li><a href="./XML_Ajax.aspx">XML & Ajax</a></li>
-                            <li><a href="./LearnASP.aspx">ASP .Net</a></li>
-                        </ul>
                     </li>
 
                      <li><a href="./mngResources.aspx">Resources</a>
-                        <ul>
-                            <li><a href="./easy.aspx">Easy</a></li>
-                            <li><a href="./moderateExam.aspx">Moderate</a></li>
-                            <li><a href="./expert.aspx">Expert</a></li>
-                        </ul>
                     </li>
-
-
                     <li><a href="./mngExams.html">Exams</a></li>
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Moderate Exam" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeFile="moderateExam.aspx.cs" Inherits="IS424_Project.Sub_pages.moderateExam" %>
+﻿<%@ Page Title="Moderate Exam" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.moderateExam" Codebehind="moderateExam.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 	<html xmlns="./Data/Moderate.xml">
 		<link rel="icon" href="../img/css.png" />

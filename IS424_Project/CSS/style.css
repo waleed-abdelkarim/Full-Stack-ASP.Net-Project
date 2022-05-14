@@ -58,6 +58,15 @@ body {
     background-color: lightgray;
 }
 
+.formBtn{
+    margin: 10px;
+   
+}
+.ce {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
 header {
     width: 100%;
     color: white;
@@ -67,6 +76,77 @@ header {
     overflow: hidden;
     position: sticky;
     top: 0;
+}
+div.user {
+    width: 50%;
+    right: 0em;
+    top: 0em;
+    position: fixed;
+    min-height: 50px;
+    overflow: hidden;
+    font-size: 18px;
+}
+.user ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+    .user ul li {
+        display: block;
+        float: left;
+    }
+
+        .user ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 0 8px 0 8px;
+            background: darkorange;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .user ul li ul a {
+            border-top: solid;
+            padding: 0 5px 0 5px;
+        }
+
+        .user ul li a:hover {
+            color: darkorange;
+            background-color: white;
+            transition: ease-in;
+            transition-duration: 0.5s;
+        }
+.user li ul {
+    display: none;
+}
+
+.user li:hover ul {
+    display: block;
+}
+
+.user li:hover li {
+    float: none;
+    font-size: 18px;
+}
+
+.user li:hover a {
+    color: white;
+    background-color: darkorange;
+}
+
+li:hover li a:hover {
+    color: darkorange;
+    background-color: white;
+    transition: ease-in;
+    transition-duration: 0.5s;
+}
+
+.user ul {
+    text-align: left;
+    font-size: 18px;
 }
 
 
@@ -151,12 +231,12 @@ li:hover li a:hover {
 }
 
     #description h1 {
-        font-size: 55px;
+        font-size: 45px;
         margin-bottom: 10px;
     }
 
     #description p {
-        font-size: 30px;
+        font-size: 26px;
         background-color: rgba(100, 55, 0, 0.6);
         border-radius: 20px 50px;
     }
@@ -219,6 +299,15 @@ footer {
     font-size: 20px;
 }
 
+#user {
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: 40px;
+    height: 40px;
+}
+
 #return {
     position: fixed;
     left: 0px;
@@ -245,7 +334,6 @@ footer {
     background-color: rgba(0, 128, 128, 0.6);
     min-height: 500px;
     text-align: center;
-    /*    border-radius: 50px 50px 50px 50px;*/
     overflow: hidden;
     height: 100%;
     align-content: center;
@@ -254,6 +342,8 @@ footer {
     overflow: hidden;
     display:block;
 }
+
+
 #login_inner {
     background-color: darkorange;
     margin: auto;
@@ -267,13 +357,12 @@ footer {
 .TOC {
     background-color: darkorange;
     text-align: center;
-    /*    min-width: 410px;
-    min-height: 500px;*/
     border-radius: 0 50px 50px 0;
     overflow: hidden;
 }
 
     .TOC a {
+        font-size:20px;
         text-decoration: none;
         color: white;
         padding: 0 10px 0 10px;
@@ -304,43 +393,54 @@ iframe {
 .quiz caption {
     font-size: 34px;
 }
-
-@media (max-width: 1200px) {
-
-    #logo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    div.menu {
-        top: 3.25em;
-        right: 0em;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
+@media (max-width: 1000px) {
     #description {
-        min-height: 400px;
+        flex-wrap: wrap-reverse;
     }
 
-        #description h1 {
-            font-size: 40px;
+
+}
+
+    @media (max-width: 1200px) {
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
 
-        #description p {
-            font-size: 20px;
+        div.menu {
+            top: 3.25em;
+            right: 0em;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
 
-    .container_center {
-        width: 90%;
-    }
+        #description {
+            min-height: 400px;
+        }
 
-    .box {
-        margin-right: 15px;
-    }
+            #description h1 {
+                font-size: 35px;
+            }
+
+            #description p {
+                font-size: 18px;
+            }
+
+        .TOC a {
+            font-size: 18px;
+        }
+
+        .container_center {
+            width: 90%;
+        }
+
+        .box {
+            margin-right: 15px;
+        }
 
 
         .quiz p {
@@ -355,100 +455,91 @@ iframe {
             font-size: 26px;
         }
 
-    iframe {
-        width: 510px;
-        height: 287px;
-    }
-
-    .frame_box img {
-        width: 510px;
-        height: 287px;
-    }
-
-    .TOC {
-/*        min-height: 410px;*/
-        font-size: 20px;
-    }
-
-    .container_table {
-        width: 100%;
-    }
-}
-
-/*@media (max-height: 810px) {
-    .TOC {
-        margin-top: 75px;
-        min-height: 425px;
-    }
-}*/
-
-@media (max-width: 700px) {
-    #logo {
-        font-size: 24px;
-    }
-
-    div.menu {
-        top: 2.4em;
-    }
-
-        div.menu ul li a {
-            font-size: 18px;
-            padding: 0 6px 0 6px;
-            margin-left: 8px;
+        iframe {
+            width: 510px;
+            height: 287px;
         }
 
-        div.menu ul li ul a {
+        .frame_box img {
+            width: 510px;
+            height: 287px;
+        }
+
+        .container_table {
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: 700px) {
+        #logo {
+            font-size: 24px;
+        }
+
+        div.menu {
+            top: 2.4em;
+        }
+
+            div.menu ul li a {
+                font-size: 18px;
+                padding: 0 6px 0 6px;
+                margin-left: 8px;
+            }
+
+            div.menu ul li ul a {
+                font-size: 16px;
+            }
+
+        #description {
+            flex-wrap: wrap-reverse;
+        }
+
+        .TOC {
+            /*        width: 100%;*/
+            border-radius: 0;
+            flex: 100%;
+        }
+
+            .TOC li {
+                font-size: 20px;
+            }
+
+        .container_center {
+            width: 90%;
+        }
+
+        .container_dis {
+            flex: 95%
+        }
+
+        #names {
+            font-size: 14px;
+        }
+
+        iframe {
+            width: 380px;
+            height: 214px;
+        }
+
+        .frame_box img {
+            width: 380px;
+            height: 214px;
+        }
+
+        .quiz p {
             font-size: 16px;
         }
 
-    #description {
-        flex-wrap: wrap-reverse;
-    }
-
-    .TOC {
-/*        width: 100%;*/
-        border-radius: 0;
-        flex: 100%;
-    }
-
-        .TOC li {
-            font-size: 20px;
+        .quiz label {
+            font-size: 16px;
         }
 
-    .container_center {
-        width: 90%;
-    }
-    .container_dis{
-        flex:95%
-    }
-    #names {
-        font-size: 14px;
+        .quiz caption {
+            font-size: 24px;
+        }
     }
 
-    iframe {
-        width: 380px;
-        height: 214px;
-    }
-
-    .frame_box img {
-        width: 380px;
-        height: 214px;
-    }
-
-    .quiz p {
-        font-size: 16px;
-    }
-
-    .quiz label {
-        font-size: 16px;
-    }
-
-    .quiz caption {
-        font-size: 24px;
-    }
-}
-
-/*@media (max-width: 1300px) {
+    /*@media (max-width: 1300px) {
     .container_center {
         width: 100%;
     }
