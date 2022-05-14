@@ -403,11 +403,15 @@ Partial Class Expert_Quiz
         End If
         ans10.Visible = True
 
+
         If CA = 10 Then
-            Response.Write("<script language=""javascript"">alert('" & CA & "/10\nFull Mark!');</script>")
-        Else
-            Response.Write("<script language=""javascript"">alert('" & CA & "/10\nYour mistake was: Question " & WAs & " ');</script>")
-        End If
+                Response.Write("<script language=""javascript"">alert('" & CA & "/10\nFull Mark!');</script>")
+            Else
+                Response.Write("<script language=""javascript"">alert('" & CA & "/10\nYour mistake was: Question " & WAs & " ');</script>")
+            End If
+
+            SubmitButton.Visible = False
+
 
     End Sub
 
