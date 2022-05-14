@@ -1,167 +1,269 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/masterPage.Master" AutoEventWireup="false" CodeFile="Expert_Quiz.aspx.vb" Inherits="Expert_Quiz" %>
+﻿<%@ Page Title="Expert Exam" Language="VB" MasterPageFile="~/masterPage.Master" AutoEventWireup="false" CodeFile="Expert_Quiz.aspx.vb" Inherits="Expert_Quiz" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+   <style>
+         .container_ce {
+			margin: auto;
+			overflow: hidden;
+			min-height: 500px;
+            min-width:500px;
+		}
+		.but {
+			background-color: teal;
+			padding: 5px;
+			border: 0;
+			font-size: 14px;
+			color: white;
+			font-weight: bold;
+		}
+		.but:hover {
+			background-color: darkorange;
+			padding: 5px;
+			border: 0;
+			font-size: 14px;
+		}
+		.answers{
+			background-color: rgba(144, 238, 144, 0.4);
+			border-radius: 5px;
+		}
+
+    </style>
+</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-	<form id="form1" runat="server">
+	<asp:Label runat="server" CssClass="quiz">
+		<h1 style="text-align:center;">Expert Exam</h1>
+	</asp:Label>
 
-	<section style="text-align:center;">
+    <form runat="server" class="quiz" >
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ex %>" ProviderName="<%$ ConnectionStrings:ex.ProviderName %>" SelectCommand="SELECT * FROM [Questions]"></asp:SqlDataSource>
+
+        <asp:Table ID="Table2" runat="server" CssClass="container_ce" Height="92px" Width="320px">
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN1" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q1" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q1MC1" runat="server" GroupName="Q1" />
+                        <br>
+                        <asp:RadioButton ID="Q1MC2" runat="server" GroupName="Q1" />
+                        <br>
+                        <asp:RadioButton ID="Q1MC3" runat="server" GroupName="Q1" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans1" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN2" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q2" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q2MC1" runat="server" GroupName="Q2" />
+                        <br>
+                        <asp:RadioButton ID="Q2MC2" runat="server" GroupName="Q2" />
+                        <br>
+                        <asp:RadioButton ID="Q2MC3" runat="server" GroupName="Q2" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans2" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN3" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q3" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q3MC1" runat="server" GroupName="Q3" />
+                        <br>
+                        <asp:RadioButton ID="Q3MC2" runat="server" GroupName="Q3" />
+                        <br>
+                        <asp:RadioButton ID="Q3MC3" runat="server" GroupName="Q3" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans3" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN4" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q4" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q4MC1" runat="server" GroupName="Q4" />
+                        <br>
+                        <asp:RadioButton ID="Q4MC2" runat="server" GroupName="Q4" />
+                        <br>
+                        <asp:RadioButton ID="Q4MC3" runat="server" GroupName="Q4" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans4" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN5" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q5" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q5MC1" runat="server" GroupName="Q5" />
+                        <br>
+                        <asp:RadioButton ID="Q5MC2" runat="server" GroupName="Q5" />
+                        <br>
+                        <asp:RadioButton ID="Q5MC3" runat="server" GroupName="Q5" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans5" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN6" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q6" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q6MC1" runat="server" GroupName="Q6" />
+                        <br>
+                        <asp:RadioButton ID="Q6MC2" runat="server" GroupName="Q6" />
+                        <br>
+                        <asp:RadioButton ID="Q6MC3" runat="server" GroupName="Q6" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans6" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN7" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q7" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q7MC1" runat="server" GroupName="Q7" />
+                        <br>
+                        <asp:RadioButton ID="Q7MC2" runat="server" GroupName="Q7" />
+                        <br>
+                        <asp:RadioButton ID="Q7MC3" runat="server" GroupName="Q7" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans7" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN8" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q8" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q8MC1" runat="server" GroupName="Q8" />
+                        <br>
+                        <asp:RadioButton ID="Q8MC2" runat="server" GroupName="Q8" />
+                        <br>
+                        <asp:RadioButton ID="Q8MC3" runat="server" GroupName="Q8" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans8" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN9" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q9" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q9MC1" runat="server" GroupName="Q9" />
+                        <br>
+                        <asp:RadioButton ID="Q9MC2" runat="server" GroupName="Q9" />
+                        <br>
+                        <asp:RadioButton ID="Q9MC3" runat="server" GroupName="Q9" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans9" class="answers" runat="server" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <strong>
+                            <asp:Label ID="QN10" runat="server" Text="Question Number"></asp:Label>
+                        </strong>
+                        <br>
+                        <p>
+                            <asp:Label ID="Q10" runat="server" Text="Question here"></asp:Label>
+                        </p>
+                        <asp:RadioButton ID="Q10MC1" runat="server" GroupName="Q10" />
+                        <br>
+                        <asp:RadioButton ID="Q10MC2" runat="server" GroupName="Q10" />
+                        <br>
+                        <asp:RadioButton ID="Q10MC3" runat="server" GroupName="Q10" />
+                        <br>
+                    </p>
+                    <asp:Label Visible="false" ID="ans10" runat="server" CssClass="answers" Font-Bold="true"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
 
 
-					<p class="auto-style3">
-						<strong>
-						<asp:Label ID="Label2" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;
-						</strong><asp:Label ID="Label1" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;
-						<asp:RadioButton ID="Q1MC1" runat="server" GroupName="Q1" />
-						<br>
-						<asp:RadioButton ID="Q1MC2" runat="server" GroupName="Q1" />
-						<br>
-	                	<asp:RadioButton ID="Q1MC3" runat="server" GroupName="Q1" />
-						&nbsp;</p>
+            <asp:TableRow runat="server">
+                <asp:TableCell>
+                    <p>
+                        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="but" />
+                    </p>
+                </asp:TableCell>
+            </asp:TableRow>
 
+        </asp:Table>
 
-					<p class="auto-style4">
-						<strong>
-						<asp:Label ID="Label19" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label20" runat="server" Text="Question here"></asp:Label>
-						<br>
-						<asp:RadioButton ID="Q2MC1" runat="server" GroupName="Q2" />
-						<br>
-						<asp:RadioButton ID="Q2MC2" runat="server" GroupName="Q2" />
-						<br>
-	                	<asp:RadioButton ID="Q2MC3" runat="server" GroupName="Q2" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label21" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label22" runat="server" Text="Question here"></asp:Label>
-						<br>
-						<asp:RadioButton ID="RadioButton7" runat="server" GroupName="Q3" />
-						<br>
-						<asp:RadioButton ID="RadioButton8" runat="server" GroupName="Q3" />
-						<br>
-	                	<asp:RadioButton ID="RadioButton9" runat="server" GroupName="Q3" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label23" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label24" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton12" runat="server" GroupName="Q4" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton11" runat="server" GroupName="Q4" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton10" runat="server" GroupName="Q4" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label25" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label26" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton13" runat="server" GroupName="Q5" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton14" runat="server" GroupName="Q5" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton15" runat="server" GroupName="Q5" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label27" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label28" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton17" runat="server" GroupName="Q6" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton16" runat="server" GroupName="Q6" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton18" runat="server" GroupName="Q6" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label29" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label30" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton19" runat="server" GroupName="Q7" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton20" runat="server" GroupName="Q7" />
-						<br>
-	                	<asp:RadioButton ID="RadioButton21" runat="server" GroupName="Q7" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label31" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label32" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton22" runat="server" GroupName="Q8" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton24" runat="server" GroupName="Q8" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton23" runat="server" GroupName="Q8" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label33" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label34" runat="server" Text="Question here"></asp:Label>
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton25" runat="server" GroupName="Q9" />
-						<br>
-						&nbsp;<asp:RadioButton ID="RadioButton26" runat="server" GroupName="Q9" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton27" runat="server" GroupName="Q9" />
-						<br>
-                	</p>
-
-					<p>
-						<strong>
-						<asp:Label ID="Label35" runat="server" Text="Question Number"></asp:Label>
-						<br>
-						&nbsp;</strong><asp:Label ID="Label36" runat="server" Text="Question here"></asp:Label>
-						<br>
-						<asp:RadioButton ID="RadioButton28" runat="server" GroupName="Q10" />
-						<br>
-						<asp:RadioButton ID="RadioButton29" runat="server" GroupName="Q10" />
-						<br>
-	                	&nbsp;<asp:RadioButton ID="RadioButton30" runat="server" GroupName="Q10" />
-						<br>
-                	</p>
-
-						<p>
-	        				<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" ProviderName="<%$ ConnectionStrings:ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM [Questions]"></asp:SqlDataSource>
-	        				&nbsp;
-                            <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
-&nbsp;
-                            <asp:Button ID="ClearButton" runat="server" Text="Clear" />
-&nbsp;
-                            <asp:Button ID="ShuffleButton" runat="server" Text="Shuffle" />
-		         		</p>   
-
-
-	</section>
-     
     </form>
      
 </asp:Content>
