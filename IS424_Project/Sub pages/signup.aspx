@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="IS424_Project.Sub_pages.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+    .auto-style1 {
+        height: 26px;
+    }
+    .auto-style2 {
+        direction: ltr;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
@@ -32,16 +40,16 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style7">Password</td>
-                <td class="auto-style3">
+                <td class="auto-style1">Password</td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TB_password0" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style6">
+                <td class="auto-style1">
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TB_password" ControlToValidate="TB_password0" Display="Dynamic" ErrorMessage="CompareValidator"></asp:CompareValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style4">&nbsp;</td>
             </tr>
@@ -51,7 +59,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style7">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                </td>
                 <td colspan="2" class="ce">
                     <asp:Button ID="insertBTN" runat="server" Text="Insert"  CssClass="formBtn" />
                 </td>

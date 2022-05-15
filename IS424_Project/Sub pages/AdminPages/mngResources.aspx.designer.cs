@@ -42,12 +42,30 @@ namespace IS424_Project.Sub_pages.AdminPages
         protected global::System.Web.UI.WebControls.RadioButtonList lanList;
 
         /// <summary>
-        /// xmllabel control.
+        /// idlabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label xmllabel;
+        protected global::System.Web.UI.WebControls.Label idlabel;
+
+        /// <summary>
+        /// test control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl test;
+
+        /// <summary>
+        /// delete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button delete;
     }
 }

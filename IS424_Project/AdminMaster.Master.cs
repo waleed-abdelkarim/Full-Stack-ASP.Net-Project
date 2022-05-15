@@ -11,17 +11,17 @@ namespace IS424_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                //if (Session["Username"] == null)
-                //    Response.Redirect("../Login.aspx");
-                //else if (!Session["class"].Equals("Admin"))
-                //    Response.Redirect("../Login.aspx");
-                //else
-                //    Response.Redirect("~/Sub pages/AdminPages/AdminHome.aspx");
-              
-            }
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", $"test({Session["name"]})", true);
+            //    if (!IsPostBack)
+            //    {
+            //        //if (Session["Username"] == null)
+            //        //    Response.Redirect("../Login.aspx");
+            //        //else if (!Session["class"].Equals("Admin"))
+            //        //    Response.Redirect("../Login.aspx");
+            //        //else
+            //        //    Response.Redirect("~/Sub pages/AdminPages/AdminHome.aspx");
+
+            //    }
+            //    Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", $"test({Session["name"]})", true);
 
         }
     }

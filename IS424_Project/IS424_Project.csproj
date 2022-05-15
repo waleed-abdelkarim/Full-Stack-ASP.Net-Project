@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -68,15 +69,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Expert_Questions - Copy.accdb" />
-    <Content Include="App_Data\Users1.accdb" />
+    <Content Include="App_Data\Expert_Questions.accdb" />
+    <Content Include="App_Data\Users.accdb" />
+    <Content Include="Data\CSS - Copy.xml" />
+    <Content Include="Data\CSS.xml" />
+    <Content Include="Data\HTML.xml" />
+    <Content Include="Data\JS.xml" />
+    <Content Include="Data\LearnASP.xml" />
     <Content Include="Data\Moderate.xml" />
+    <Content Include="Data\XML_Ajax.xml" />
     <Content Include="img\asp.png" />
     <Content Include="img\w3_ajax.png" />
     <Content Include="img\w3_asp.png" />
     <Content Include="img\w3_xml.png" />
     <Content Include="img\xml.png" />
+    <Content Include="Script\JavaScript.js" />
     <Content Include="Script\Moderate.js" />
+    <Content Include="Script\readForManeger.js" />
+    <Content Include="Script\readToPages.js" />
     <Content Include="Sub pages\AdminPages\AdminHome.aspx" />
+    <Content Include="Sub pages\AdminPages\mngResources.aspx" />
     <Content Include="Sub pages\AdminPages\mngUsers.aspx" />
     <Content Include="Sub pages\contact_old.html" />
     <Content Include="CSS\style.css" />
@@ -139,6 +151,13 @@
     </Compile>
     <Compile Include="Sub pages\AdminPages\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\AdminPages\mngResources.aspx.cs">
+      <DependentUpon>mngResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\AdminPages\mngResources.aspx.designer.cs">
+      <DependentUpon>mngResources.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\AdminPages\mngUsers.aspx.cs">
       <DependentUpon>mngUsers.aspx</DependentUpon>
