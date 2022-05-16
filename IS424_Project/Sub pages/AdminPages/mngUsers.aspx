@@ -45,8 +45,8 @@
         <h1>Manege website Users</h1>
           
          <form id="form1" runat="server" class="container_center">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UsersConn %>" ProviderName="<%$ ConnectionStrings:UsersConn.ProviderName %>" SelectCommand="SELECT [ID], [Username], [PersonName], [Class], [Level] FROM [Users] ORDER BY [Class], [Level], [PersonName]"></asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:UsersConn %>" ProviderName="<%$ ConnectionStrings:UsersConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT [ID], [Username], [PersonName], [Class], [Level] FROM [Users] ORDER BY [Class], [Level], [PersonName]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
             <table class="formInput">
             <tr>
                 <td class="auto-style7">Username</td>

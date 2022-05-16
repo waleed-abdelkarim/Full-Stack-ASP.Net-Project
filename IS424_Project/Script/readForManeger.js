@@ -2,7 +2,6 @@
 function loadXMLDoc(path) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
-
         if (this.readyState == 4 && this.status == 200) {
             xml = this;
             displayItems(this);
@@ -25,25 +24,17 @@ function displayItems(xml) {
         str += x[i].getElementsByTagName("title")[0].innerHTML;
         str += "</label><br>";
     }
-    str += "<input type='submit' value='Delete' id='submitbut' class='but' onclick='deleteItem(); return false' />";
-    document.getElementById("langauge").innerHTML = str;
+    str += "<input id='Button1' type='button' value='button' onclick='deleteItem(); return false' />"
+
+    document.getElementById("ContentPlaceHolder1_langauge").innerHTML = str;
 }
+
 function deleteItem() {
 
     var radioButtons = document.getElementsByClassName("restodele");
     for (var radioButton of radioButtons) {
         if (radioButton.checked) {
-            document.getElementById("Label2").innerHTML = radioButton.value;
+            document.getElementById("ContentPlaceHolder1_TextBox1").value = radioButton.value;
         }
     }
 }
-//    var xmlDoc = xml.responseXML;
-//    var x = xmlDoc.getElementsByTagName("item");
-//    for (var i = 0; i < x.length; i++) {
-//        if (x[i].getElementsByTagName("id")[0].innerHTML == selecteditem) {
-//            var no = x[i].getElementsByTagName("id")[0].parentNode;
-//            no.remove();
-//            /*no.parentNode.removeChild(no);*/
-//        }
-//    }
-//}

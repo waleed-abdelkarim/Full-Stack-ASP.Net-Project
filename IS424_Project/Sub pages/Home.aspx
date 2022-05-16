@@ -34,7 +34,8 @@
     <section id="description" style="background-image:url('../img/poster.jpg');">
 		<form id="LoginForm" runat="server">
             <div id="login_inner" >
-            <h2>Log in</h2>
+            <h2>Log in<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                </h2>
             <br />
         <table class="table_form">
             <tr>
@@ -90,9 +91,6 @@
 			</a>
 
 			
-			<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
-
-
 	</section>
      
 </asp:Content>

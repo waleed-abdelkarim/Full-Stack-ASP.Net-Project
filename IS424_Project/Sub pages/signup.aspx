@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="IS424_Project.Sub_pages.signup" %>
+﻿<%@ Page Title="IS424 | Signup" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="IS424_Project.Sub_pages.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link rel="icon" href="../img/web.png" />
     <style type="text/css">
     .auto-style1 {
         height: 26px;

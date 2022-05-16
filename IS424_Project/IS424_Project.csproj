@@ -63,6 +63,29 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Files\ASP\ch25ASP.NET.zip" />
+    <Content Include="Files\ASP\IS446-chap25.pdf" />
+    <Content Include="Files\CSS\ch05CSS.zip" />
+    <Content Include="Files\CSS\IS446-chap05.pdf" />
+    <Content Include="Files\HTML\ch04XHTML.zip" />
+    <Content Include="Files\HTML\IS446-chap04.pdf" />
+    <Content Include="Files\JS\ch06IntroToJavaScript.zip" />
+    <Content Include="Files\JS\ch07JavaScriptControlStatements1.zip" />
+    <Content Include="Files\JS\ch08JavaScriptControlStatements2.zip" />
+    <Content Include="Files\JS\ch09JavaScriptFunctions.zip" />
+    <Content Include="Files\JS\ch10JavaScriptArrays.zip" />
+    <Content Include="Files\JS\ch11JavaScriptObjects.zip" />
+    <Content Include="Files\JS\IS446-chap06.pdf" />
+    <Content Include="Files\JS\IS446-chap07.pdf" />
+    <Content Include="Files\JS\IS446-chap08.pdf" />
+    <Content Include="Files\JS\IS446-chap09.pdf" />
+    <Content Include="Files\JS\IS446-chap10.pdf" />
+    <Content Include="Files\JS\IS446-chap11.pdf" />
+    <Content Include="Files\XML_Ajax\ch14XML.zip" />
+    <Content Include="Files\XML_Ajax\IS446-chap14.pdf" />
+    <Content Include="Files\XML_Ajax\IS446-chap15.pdf" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -79,9 +102,6 @@
     <Content Include="Data\Moderate.xml" />
     <Content Include="Data\XML_Ajax.xml" />
     <Content Include="img\asp.png" />
-    <Content Include="img\w3_ajax.png" />
-    <Content Include="img\w3_asp.png" />
-    <Content Include="img\w3_xml.png" />
     <Content Include="img\xml.png" />
     <Content Include="Script\JavaScript.js" />
     <Content Include="Script\Moderate.js" />
@@ -102,11 +122,9 @@
     <Content Include="img\poster.jpg" />
     <Content Include="img\ppt.png" />
     <Content Include="img\resources.png" />
-    <Content Include="img\w3_css.png" />
-    <Content Include="img\w3_html.png" />
-    <Content Include="img\w3_js.png" />
     <Content Include="img\web.png" />
     <Content Include="Sub pages\CSS.aspx" />
+    <Content Include="Sub pages\easyExam.aspx" />
     <Content Include="Sub pages\Exams.aspx" />
     <Content Include="Sub pages\Expert_Quiz.aspx" />
     <Content Include="Sub pages\Expert_Quiz.aspx.vb">
@@ -121,9 +139,6 @@
     <Content Include="Sub pages\moderateExam.aspx" />
     <Content Include="Sub pages\signup.aspx" />
     <Content Include="Sub pages\XML_Ajax.aspx" />
-    <Content Include="Sub pages\css_Exam_old.html" />
-    <Content Include="Sub pages\html_Exam_old.html" />
-    <Content Include="Sub pages\JS_Exam_old.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +187,13 @@
     </Compile>
     <Compile Include="Sub pages\CSS.aspx.designer.cs">
       <DependentUpon>CSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sub pages\easyExam.aspx.cs">
+      <DependentUpon>easyExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sub pages\easyExam.aspx.designer.cs">
+      <DependentUpon>easyExam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\Exams.aspx.cs">
       <DependentUpon>Exams.aspx</DependentUpon>

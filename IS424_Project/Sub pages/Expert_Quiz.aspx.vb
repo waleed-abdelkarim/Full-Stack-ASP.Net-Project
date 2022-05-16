@@ -5,6 +5,13 @@ Partial Class Expert_Quiz
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
+            If Not Session("level").Equals("Expert") Then
+                Response.Redirect("./Login.aspx")
+            End If
+        End If
+
+
+        If Not IsPostBack Then
             Q1MC1.Checked = False
             Q1MC2.Checked = False
             Q1MC3.Checked = False

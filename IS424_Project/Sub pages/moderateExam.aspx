@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Moderate Exam" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.moderateExam" Codebehind="moderateExam.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 	<html xmlns="./Data/Moderate.xml">
-		<link rel="icon" href="../img/css.png" />
+		    <link rel="icon" href="../img/exams.png" />
   <script src="../Script/Moderate.js">
    </script> 
 	<script type="text/javascript">

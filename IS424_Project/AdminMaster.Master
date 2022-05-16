@@ -8,18 +8,29 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="./CSS/style.css">
-     
+     <script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+            Session["Username"] ="";
+            Session["name"] = "";
+            Session["class"] = "";
+            Session["level"] = "";
+            Response.Redirect("../Login.aspx");
+        }
+
+   </script>
 </head>
+
+
 <body >
 
     <header>
         <div class="user">
             <ul>
-                <li><div id="username"></div>
-                     <ul>
-                        <li><a href="./AdminHome.aspx">Home</a></li>
-                     </ul>
-                </li>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server">Sign out from Admin</a></li>
             </ul>
         </div>
         <div class="container">
@@ -36,7 +47,6 @@
 
                      <li><a href="./mngResources.aspx">Resources</a>
                     </li>
-                    <li><a href="./mngExams.html">Exams</a></li>
                 </ul>
             </div>
         </div>

@@ -19,19 +19,19 @@
 		</section>
 
 	<section class="boxes">
-			<a href="./Learn.aspx">
+			<a href="./mngUsers.aspx">
 				<div class="box">
 					<img src="../../img/web.png">
-					<h2>Learning center</h2>
-					<p>Here you will find a good resources to learn</p>
+					<h2>Manege Users</h2>
+					<p>Add, Delete, and Update users</p>
 				</div>
 			</a>
 
-			<a href="./Exams.aspx">
+			<a href="./mngResources.aspx">
 				<div class="box">
-					<img src="../../img/exams.png">
-					<h2>Exams Center</h2>
-					<p>Here you will be able to test your knowledge</p>
+					<img src="../../img/web.png">
+					<h2>Manege Resources</h2>
+					<p>Add new resources, or delete old ones</p>
 				</div>
 			</a>
 

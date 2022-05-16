@@ -19,7 +19,7 @@ namespace IS424_Project.Sub_pages
         }
         protected void LoginBtn_Click(object sender, EventArgs e)
         {
-            incorrectLabel.Visible = true;
+            incorrectLabel.Visible = false;
             String userName = TB_UserName.Text;
             String password = TB_Password.Text;
 
@@ -41,7 +41,6 @@ namespace IS424_Project.Sub_pages
                         Session["name"] = dr[2].ToString();
                         Session["class"] = dr[4].ToString();
                         Session["level"] = dr[5].ToString();
-
                     }
                 }
                 catch (Exception ex)

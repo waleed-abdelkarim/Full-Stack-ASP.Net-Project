@@ -34,7 +34,7 @@
             <tr>
                 <td class="auto-style1" colspan="2" style="text-align:center;">
                     
-                    <asp:Label ID="incorrectLabel" runat="server" Font-Size="Large" Text="The username or password you provided is incorrect"></asp:Label>
+                    <asp:Label ID="incorrectLabel" runat="server" Font-Size="Large" Text="The username or password you provided is incorrect" Visible="False"></asp:Label>
                     
                 </td>
             </tr>

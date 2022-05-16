@@ -78,77 +78,14 @@ header {
     top: 0;
 }
 div.user {
-    width: 50%;
-    right: 0em;
-    top: 0em;
+    width: 25%;
+    right: 2em;
+    top: 0.25em;
     position: fixed;
     min-height: 50px;
     overflow: hidden;
     font-size: 18px;
 }
-.user ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    float: right;
-}
-
-    .user ul li {
-        display: block;
-        float: left;
-    }
-
-        .user ul li a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            padding: 0 8px 0 8px;
-            background: darkorange;
-            margin-left: 10px;
-            text-transform: uppercase;
-        }
-
-        .user ul li ul a {
-            border-top: solid;
-            padding: 0 5px 0 5px;
-        }
-
-        .user ul li a:hover {
-            color: darkorange;
-            background-color: white;
-            transition: ease-in;
-            transition-duration: 0.5s;
-        }
-.user li ul {
-    display: none;
-}
-
-.user li:hover ul {
-    display: block;
-}
-
-.user li:hover li {
-    float: none;
-    font-size: 18px;
-}
-
-.user li:hover a {
-    color: white;
-    background-color: darkorange;
-}
-
-li:hover li a:hover {
-    color: darkorange;
-    background-color: white;
-    transition: ease-in;
-    transition-duration: 0.5s;
-}
-
-.user ul {
-    text-align: left;
-    font-size: 18px;
-}
-
 
 div.menu {
     width: 50%;

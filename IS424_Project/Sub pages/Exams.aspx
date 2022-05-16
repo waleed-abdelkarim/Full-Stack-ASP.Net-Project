@@ -27,7 +27,7 @@
 			</div>
 		</a>
 
-		<a href="./expertExam.aspx">
+		<a href="./Expert_Quiz.aspx">
 				<div class="box">
 					<img src="../img/exams.png">
 					<h2>Expert Exam</h2>

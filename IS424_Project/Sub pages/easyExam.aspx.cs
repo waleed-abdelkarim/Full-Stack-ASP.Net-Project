@@ -7,16 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace IS424_Project.Sub_pages
 {
-    public partial class moderateExam : System.Web.UI.Page
+    public partial class easyExam : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (!Session["level"].Equals("Moderate"))
-                    Response.Redirect("./Login.aspx");
-            }
 
         }
     }

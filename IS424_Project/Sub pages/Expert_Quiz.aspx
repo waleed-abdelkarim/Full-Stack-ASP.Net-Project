@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Expert Exam" Language="VB" MasterPageFile="~/masterPage.Master" AutoEventWireup="false" CodeFile="Expert_Quiz.aspx.vb" Inherits="Expert_Quiz" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+        <link rel="icon" href="../img/exams.png" />
    <style>
          .container_ce {
 			margin: auto;
