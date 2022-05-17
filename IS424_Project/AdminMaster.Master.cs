@@ -11,18 +11,20 @@ namespace IS424_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)
-            //{
-            //    if (!Session["class"].Equals("Admin"))
-            //        Response.Redirect("../Login.aspx");
-            //}
+            if (!IsPostBack)
+            {
+                if (!string.IsNullOrEmpty(Session["class"] as string)){
+                    if (!Session["class"].Equals("Admin"))
+                        Response.Redirect("../Login.aspx");
+                }
+                else
+                    Response.Redirect("../Login.aspx");
+            }
         }
-        protected void clear(object sender, EventArgs e)
+
+        protected void username_Click(object sender, EventArgs e)
         {
-            Session["Username"] ="";
-            Session["name"] = "";
-            Session["class"] = "";
-            Session["level"] = "";
+            Session.Contents.RemoveAll();
         }
     }
 

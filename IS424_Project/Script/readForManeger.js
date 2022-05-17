@@ -24,7 +24,7 @@ function displayItems(xml) {
         str += x[i].getElementsByTagName("title")[0].innerHTML;
         str += "</label><br>";
     }
-    str += "<input id='Button1' type='button' value='button' onclick='deleteItem(); return false' />"
+    str += "<input id='Button1' type='button' value='Select' onclick='deleteItem(); return false' />"
 
     document.getElementById("ContentPlaceHolder1_langauge").innerHTML = str;
 }

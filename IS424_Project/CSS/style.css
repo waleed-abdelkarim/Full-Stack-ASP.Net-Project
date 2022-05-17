@@ -78,14 +78,30 @@ header {
     top: 0;
 }
 div.user {
-    width: 25%;
-    right: 2em;
-    top: 0.25em;
+    width: 80%;
+    right: 0.25em;
+    top: 0em;
     position: fixed;
-    min-height: 50px;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 16px;
 }
+.user ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .user ul li {
+        display: block;
+        float: right;
+    }
+
+        .user ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0 10px 0 10px;
+            background: darkorange;
+        }
+
 
 div.menu {
     width: 50%;
@@ -286,11 +302,13 @@ footer {
     margin: auto;
     border-radius: 50px 50px 50px 50px;
     min-height: 300px;
-    width: 350px;
+    width: 450px;
     vertical-align: middle;
     margin-top: 5.5em;
     padding: 20px;
 }
+
+
 .TOC {
     background-color: darkorange;
     text-align: center;
@@ -412,6 +430,9 @@ iframe {
         #logo {
             font-size: 24px;
         }
+        div ul {
+            font-size: 14px;
+        }
 
         div.menu {
             top: 2.4em;
@@ -432,7 +453,6 @@ iframe {
         }
 
         .TOC {
-            /*        width: 100%;*/
             border-radius: 0;
             flex: 100%;
         }
@@ -476,17 +496,3 @@ iframe {
         }
     }
 
-    /*@media (max-width: 1300px) {
-    .container_center {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .TOC {
-        display: block;
-        position: relative;
-        min-width: 60%;
-    }
-}
-*/

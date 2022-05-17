@@ -8,7 +8,7 @@ function result() {
     var mscount = 0;
 
     
-    document.getElementById("submitbut").disabled = true;
+    document.getElementById("submitbut").hidden = true;
     //show and calc answers
     for (var i = 0; i < count; i++) {
         document.getElementById("ans" + (i + 1) + "").hidden = false;
@@ -53,7 +53,6 @@ function loadXMLDoc() {
         }
     };
 
-    // employee.xml is the external xml file
     xmlhttp.open("GET", "../Data/Moderate.xml", true);
     xmlhttp.send();
 }

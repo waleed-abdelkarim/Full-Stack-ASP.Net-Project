@@ -94,7 +94,6 @@
     <Content Include="App_Data\Expert_Questions - Copy.accdb" />
     <Content Include="App_Data\Expert_Questions.accdb" />
     <Content Include="App_Data\Users.accdb" />
-    <Content Include="Data\CSS - Copy.xml" />
     <Content Include="Data\CSS.xml" />
     <Content Include="Data\HTML.xml" />
     <Content Include="Data\JS.xml" />
@@ -110,7 +109,6 @@
     <Content Include="Sub pages\AdminPages\AdminHome.aspx" />
     <Content Include="Sub pages\AdminPages\mngResources.aspx" />
     <Content Include="Sub pages\AdminPages\mngUsers.aspx" />
-    <Content Include="Sub pages\contact_old.html" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
     <Content Include="img\contact.png" />
@@ -152,13 +150,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="masterPage.Master.designer.cs">
+      <DependentUpon>masterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="masterPage.Master.cs">
       <DependentUpon>masterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="masterPage.Master.designer.cs">
-      <DependentUpon>masterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Sub pages\AdminPages\AdminHome.aspx.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
@@ -289,6 +287,8 @@
     <Content Include="Files\ASP\ch25ASP.NET.zip" />
     <Content Include="Files\ASP\IS446-chap25.pdf" />
     <Content Include="AdminMaster.Master" />
+    <Content Include="Data\DataSchema.dtd" />
+    <Content Include="Data\ModerateSchema.dtd" />
     <None Include="packages.config" />
     <Content Include="masterPage.Master" />
     <None Include="Web.Debug.config">

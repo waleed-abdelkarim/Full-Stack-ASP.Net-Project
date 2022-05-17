@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.Master.cs" Inherits="IS424_Project.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="masterPage.Master.cs" Inherits="IS424_Project.Site1" %>
 
 <!DOCTYPE html>
 
@@ -8,10 +8,27 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="./CSS/style.css">
+       <script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+              Session.Contents.RemoveAll();
+            Response.Redirect("./Home.aspx");
+        }
+
+   </script>
 </head>
 <body >
 
     <header>
+         <div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" >Sign out from Student</a></li>
+            </ul>
+        </div>
         <div class="container">
             <h1 id="logo"><a href="./Home.aspx" style="color: darkorange; text-decoration: none">IS424</a> Web
 				Application Development
@@ -33,14 +50,11 @@
 
                      <li><a href="./Exams.aspx">Exams</a>
                         <ul>
-                            <li><a href="./easy.aspx">Easy</a></li>
+                            <li><a href="./easyExam.aspx">Easy</a></li>
                             <li><a href="./moderateExam.aspx">Moderate</a></li>
                             <li><a href="./Expert_Quiz.aspx" onclick="">Expert</a></li>
                         </ul>
                     </li>
-
-
-                    <li><a href="./Contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>

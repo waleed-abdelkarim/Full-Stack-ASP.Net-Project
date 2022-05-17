@@ -12,11 +12,8 @@
 
       protected void clear(object sender, EventArgs e)
         {
-            Session["Username"] ="";
-            Session["name"] = "";
-            Session["class"] = "";
-            Session["level"] = "";
-            Response.Redirect("../Login.aspx");
+              Session.Contents.RemoveAll();
+            Response.Redirect("../Home.aspx");
         }
 
    </script>
@@ -30,7 +27,8 @@
             <ul>
                 <li><a id="username"
                             onserverclick="clear"
-                            runat="server">Sign out from Admin</a></li>
+                            runat="server"
+                    CausesValidation="False" >Sign out from Admin</a></li>
             </ul>
         </div>
         <div class="container">

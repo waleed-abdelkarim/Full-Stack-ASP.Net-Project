@@ -1,7 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeFile="Exams.aspx.cs" Inherits="IS424_Project.Sub_pages.Exams" %>
+﻿<%@ Page Title="Exam Center" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeFile="Exams.aspx.cs" Inherits="IS424_Project.Sub_pages.Exams" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+	    <link rel="icon" href="../../img/web.png" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+	<form id="form1" runat="server" class="container_center">
+		   </form>
 	 <section id="description" style="background-image:url('../img/poster.jpg');">
 		<div class="container">
 			<h1>Welcome to Exam center</h1>

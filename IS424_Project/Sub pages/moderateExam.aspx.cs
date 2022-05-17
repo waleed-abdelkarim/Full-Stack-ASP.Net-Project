@@ -14,10 +14,14 @@ namespace IS424_Project.Sub_pages
         {
             if (!IsPostBack)
             {
-                if (!Session["level"].Equals("Moderate"))
+                if (!string.IsNullOrEmpty(Session["level"] as string))
+                {
+                    if (Session["level"].Equals("Biginner"))
+                        Response.Redirect("./Login.aspx");
+                }
+                else if (string.IsNullOrEmpty(Session["level"] as string))
                     Response.Redirect("./Login.aspx");
             }
-
         }
     }
 }

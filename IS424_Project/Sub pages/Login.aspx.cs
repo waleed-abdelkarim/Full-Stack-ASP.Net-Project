@@ -42,6 +42,7 @@ namespace IS424_Project.Sub_pages
                         Session["class"] = dr[4].ToString();
                         Session["level"] = dr[5].ToString();
                     }
+             
                 }
                 catch (Exception ex)
                 {

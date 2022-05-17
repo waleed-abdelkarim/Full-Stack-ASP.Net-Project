@@ -1,4 +1,4 @@
-﻿<%@ Page Title="IS424 | Login" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" Inherits="IS424_Project.Sub_pages.Login" Codebehind="Login.aspx.cs" %>
+﻿<%@ Page Title="IS424 | Login" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.Login" Codebehind="Login.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="icon" href="../img/web.png" />
     <style type="text/css">
@@ -13,7 +13,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section id="description" style="background-image:url('../img/poster.jpg'); min-height: 600px;">
+        
 		<form id="LoginForm" style="min-height: 600px;" runat="server">
+            <p>You are not allowed to enter this page, please login with your acount Or complete the lower level exams </p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
             <div id="login_inner" >
             <h2>Log in</h2>

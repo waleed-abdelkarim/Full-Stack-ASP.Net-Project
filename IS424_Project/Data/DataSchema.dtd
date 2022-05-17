@@ -1,0 +1,19 @@
+<!ELEMENT File (TOC, Lectures, Resources)>
+
+<!ELEMENT TOC (id1, id2)>
+
+<!ELEMENT Lectures (item+)>
+
+<!ELEMENT Resources (item+)>
+
+<!ELEMENT item (id, title, filesrc, labsrc, websrc)>
+
+
+<!ELEMENT id1 ( #PCDATA )>
+<!ELEMENT id2 ( #PCDATA )>
+<!ELEMENT id ( #PCDATA )>
+<!ELEMENT title ( #PCDATA )>
+<!ELEMENT filesrc ( #PCDATA )>
+<!ELEMENT labsrc ( #PCDATA )>
+<!ELEMENT websrc ( #PCDATA )>
+

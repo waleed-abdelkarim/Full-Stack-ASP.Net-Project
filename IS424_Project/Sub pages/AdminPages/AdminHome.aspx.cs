@@ -11,7 +11,7 @@ namespace IS424_Project.Sub_pages.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ClientScript.GetPostBackEventReference(this, string.Empty);
         }
     }
 }

@@ -5,11 +5,15 @@ Partial Class Expert_Quiz
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            If Not Session("level").Equals("Expert") Then
+            If Not String.IsNullOrEmpty(Session("level")) Then
+                If Not Session("level").Equals("Expert") Then
+                    Response.Redirect("./Login.aspx")
+                End If
+            End If
+            If String.IsNullOrEmpty(Session("level")) Then
                 Response.Redirect("./Login.aspx")
             End If
         End If
-
 
         If Not IsPostBack Then
             Q1MC1.Checked = False

@@ -1,0 +1,10 @@
+<!ELEMENT quiz (item+)>
+
+<!ELEMENT item (question, answer1, answer2, answer3, right)>
+
+<!ELEMENT question ( #PCDATA )>
+<!ELEMENT answer1 ( #PCDATA )>
+<!ELEMENT answer2 ( #PCDATA )>
+<!ELEMENT answer3 ( #PCDATA )>
+<!ELEMENT right ( #PCDATA )>
+

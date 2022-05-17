@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE File SYSTEM "DataSchema.dtd">
 <File>
 	<TOC>
 		<id1>HTML_lectures</id1>
@@ -10,6 +11,7 @@
 			<title>Introduction to XHTML</title>
 			<filesrc>../Files/HTML/IS446-chap04.pdf</filesrc>
 			<labsrc>../Files/html/ch04XHTML.zip</labsrc>
+			<websrc></websrc>
 		</item>
 	</Lectures>
 	
@@ -17,11 +19,15 @@
 		<item>
 			<id>ht1</id>
 			<title>HTML Full Course - Build a Website Tutorial</title>
+			<filesrc></filesrc>
+			<labsrc></labsrc>
 			<websrc>https://www.youtube.com/embed/pQN-pnXPaVg</websrc>
 		</item>
 		<item>
 			<id>ht2</id>
 			<title>HTML Crash Course For Absolute Beginners</title>
+			<filesrc></filesrc>
+			<labsrc></labsrc>
 			<websrc>https://www.youtube.com/embed/UB1O30fR-EE</websrc>
 		</item>
 	</Resources>

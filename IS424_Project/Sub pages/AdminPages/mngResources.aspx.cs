@@ -15,13 +15,12 @@ namespace IS424_Project.Sub_pages.AdminPages
         String path;
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void lanList_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lanList.SelectedIndex == 0)
-                path = "../../Data/HTML.xml";
+                path = "../../Data/HTML - Copy.xml";
             else if (lanList.SelectedIndex == 1)
                 path = "../../Data/CSS - Copy.xml";
             else if (lanList.SelectedIndex == 2)
@@ -31,23 +30,41 @@ namespace IS424_Project.Sub_pages.AdminPages
             else if (lanList.SelectedIndex == 4)
                 path = "../../Data/LearnASP.xml";
 
+            TextBox1.Visible = true;
+            deletebtn.Visible = true;
 
             Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", $"loadXMLDoc('{path}')", true);
-            ins.Visible = true;
-
+        
         }
 
 
         protected void delete_Click(object sender, EventArgs e)
         {
-            String s = $"return deleteItem();";
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
+            if (lanList.SelectedIndex == 0)
+                path = "../../Data/HTML - Copy.xml";
+            else if (lanList.SelectedIndex == 1)
+                path = "../../Data/CSS - Copy.xml";
+            else if (lanList.SelectedIndex == 2)
+                path = "../../Data/JS.xml";
+            else if (lanList.SelectedIndex == 3)
+                path = "../../Data/XML_Ajax.xml";
+            else if (lanList.SelectedIndex == 4)
+                path = "../../Data/LearnASP.xml";
+
+            String s;
             try
             {
+               
                 XmlDocument doc = new XmlDocument();
-                doc.Load(Server.MapPath("../../Data/CSS - Copy.xml"));
+                s = $"console.log('{path}')\nconsole.log('hello')";
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
+                doc.Load(Server.MapPath($"{path}"));
+                s = $"console.log('1')";
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
                 XmlNode node = null;
                 XmlNodeList x = doc.GetElementsByTagName("item");
+                s = $"console.log({path})";
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
 
                 for (var i = 0; i < x.Count; i++)
                 {
@@ -61,38 +78,17 @@ namespace IS424_Project.Sub_pages.AdminPages
                             node = y[i].ParentNode;
                             node.ParentNode.RemoveChild(node);
                             string newXML = doc.OuterXml;
-                            doc.Save(Server.MapPath("../../Data/CSS - Copy.xml"));
+                           
+                            doc.Save(Server.MapPath(path));
+                           
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-
-            }
-        }
-
-        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (type_list.SelectedIndex == 0)
-            {
-                file_label.Visible = true;
-                fileUpload.Visible = true;
-                lab_label.Visible = true;
-                labUpload.Visible = true;
-
-                web_TB.Visible = false;
-                Web_label.Visible = false;
-            }
-            else if (type_list.SelectedIndex == 1)
-            {
-                file_label.Visible = false;
-                fileUpload.Visible = false;
-                lab_label.Visible = false;
-                labUpload.Visible = false;
-
-                web_TB.Visible = true;
-                Web_label.Visible = true;
+                s = $"console.log('{ex.Message}');";
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
             }
         }
 
@@ -132,6 +128,9 @@ namespace IS424_Project.Sub_pages.AdminPages
                 XmlElement labNamex = doc.CreateElement("labsrc");
                 labNamex.InnerText = savePath + labName;
                 item.AppendChild(labNamex);
+                XmlElement websrcx = doc.CreateElement("websrc");
+                websrcx.InnerText = websrc;
+                item.AppendChild(websrcx);
                 x[0].AppendChild(item);
             }
             else
@@ -146,19 +145,28 @@ namespace IS424_Project.Sub_pages.AdminPages
 
         }
 
-        protected void actList_SelectedIndexChanged(object sender, EventArgs e)
+        protected void type_list_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (actList.SelectedIndex == 0)
+            if (type_list.SelectedIndex == 0)
             {
-                ins.Visible = true;
-                langauge.Visible = false;
+                file_label.Visible = true;
+                fileUpload.Visible = true;
+                lab_label.Visible = true;
+                labUpload.Visible = true;
+
+                web_TB.Visible = false;
+                Web_label.Visible = false;
             }
-            else if (actList.SelectedIndex == 1)
+            else if (type_list.SelectedIndex == 1)
             {
-                ins.Visible = false;
-                langauge.Visible = true;
+                file_label.Visible = false;
+                fileUpload.Visible = false;
+                lab_label.Visible = false;
+                labUpload.Visible = false;
+
+                web_TB.Visible = true;
+                Web_label.Visible = true;
             }
         }
-
     }
 }

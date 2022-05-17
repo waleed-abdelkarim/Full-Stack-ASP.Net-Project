@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="Welcome Admin" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeFile="AdminHome.aspx.cs" Inherits="IS424_Project.Sub_pages.Admin.AdminHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="icon" href="../../img/web.png" />
-	 <script src="../../Script/JavaScript.js">
-          document.onload = test("waleed");
-   </script> 
     <style type="text/css">
         .auto_style1 {
             font-weight: bold;
@@ -15,6 +12,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+	   <form id="form1" runat="server" class="container_center">
+		   </form>
     <section id="description" style="background-image:url('../../img/poster.jpg');">
 		</section>
 

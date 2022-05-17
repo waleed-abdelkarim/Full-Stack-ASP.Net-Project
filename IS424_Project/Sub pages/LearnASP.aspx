@@ -13,6 +13,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+	<form id="form1" runat="server" class="container_center">
+		   </form>
     <div id="return">
         <a href="#top">Top</a>
     </div>

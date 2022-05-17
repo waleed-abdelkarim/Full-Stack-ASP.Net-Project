@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align:center;">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx" ForeColor="White">New User? SignUp</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="./SignUp.aspx" ForeColor="White">New User? SignUp</asp:HyperLink>
                 </td>
             </tr>
         </table>

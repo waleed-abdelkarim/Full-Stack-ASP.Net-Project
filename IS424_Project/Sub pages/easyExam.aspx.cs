@@ -11,7 +11,10 @@ namespace IS424_Project.Sub_pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
+            if (string.IsNullOrEmpty(Session["level"] as string))
+            {
+                Response.Redirect("./Login.aspx");
+            }
+            }
     }
 }

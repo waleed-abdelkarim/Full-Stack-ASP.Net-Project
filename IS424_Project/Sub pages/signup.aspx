@@ -1,72 +1,82 @@
-﻿<%@ Page Title="IS424 | Signup" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="IS424_Project.Sub_pages.signup" %>
+﻿<%@ Page Title="IS424 | Signup" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="True" CodeBehind="signup.aspx.cs" Inherits="IS424_Project.Sub_pages.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="icon" href="../img/web.png" />
     <style type="text/css">
-    .auto-style1 {
-        height: 26px;
-    }
-    .auto-style2 {
-        direction: ltr;
-    }
-</style>
+        .auto-style4 {
+            height: 26px;
+            font-size: large;
+        }
+        .auto-style5 {
+            height: 36px;
+        }
+        .auto-style6 {
+            direction: ltr;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
-        <table class="auto-style1">
+        <section id="description" style="background-image:url('../img/poster.jpg'); min-height: 600px;" class="auto-style6">
+		<form id="LoginForm" style="min-height: 600px;" runat="server">
+            <div id="login_inner" >
+            <h2>Sign up</h2>
+            <br />
+        <table class="table_form">
             <tr>
-                <td class="auto-style7">Username</td>
+                <td class="auto_style1" style="font-size: 20px; font-weight: bold;">Username</td>
                 <td>
                     <asp:TextBox ID="TB_UserName" runat="server" AutoPostBack="True"></asp:TextBox>
                 </td>
-                <td class="auto-style4">
+                <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TB_UserName" Display="Dynamic" ErrorMessage="Username is required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style7">Name</td>
-                <td>
+                <td class="auto-style5" style="font-size: 20px; font-weight: bold;">Name</td>
+                <td class="auto-style5">
                     <asp:TextBox ID="TB_pname" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style5">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TB_pname" Display="Dynamic" ErrorMessage="Name is required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style8">Password</td>
-                <td class="auto-style2">
+                <td style="font-size: 20px; font-weight: bold">Password</td>
+                <td>
                     <asp:TextBox ID="TB_password" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style5">
+                <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TB_password" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Password</td>
-                <td class="auto-style1">
+                <td style="font-size: 20px; font-weight: bold">Password</td>
+                <td>
                     <asp:TextBox ID="TB_password0" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style1">
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TB_password" ControlToValidate="TB_password0" Display="Dynamic" ErrorMessage="CompareValidator"></asp:CompareValidator>
+                <td>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TB_password" ControlToValidate="TB_password0" Display="Dynamic" ErrorMessage="Password doesn't match" ForeColor="#CC0000"></asp:CompareValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style4" colspan="2" style="text-align:center;">
+                    
+                    <asp:Label ID="incorrectLabel" runat="server" ForeColor="Red" Text="The user name is taken" Visible="False"></asp:Label>
+                </td>
+                <td class="auto-style4" style="text-align:center;">
+                    
+                    &nbsp;</td>
             </tr>
             <tr>
-                <td colspan="3">
-                    <asp:Label ID="error" runat="server" ForeColor="Red"></asp:Label>
+                <td colspan="2" style="text-align:center;">
+                    <asp:Button ID="SignupBtn" runat="server" Text="Sign up" Width="50%" OnClick="SignupBtn_Click"/>
                 </td>
+                <td style="text-align:center;">
+                    &nbsp;</td>
             </tr>
-            <tr>
-                <td class="auto-style7">
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
-                </td>
-                <td colspan="2" class="ce">
-                    <asp:Button ID="insertBTN" runat="server" Text="Insert"  CssClass="formBtn" />
-                </td>
-            </tr>
-        </table>
-    </form>
+            </table>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                </div>
+        </form>
+
+	</section>
 </asp:Content>

@@ -1,52 +1,60 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngResources" Codebehind="mngResources.aspx.cs" %>
+﻿<%@ Page Title="Manege Resources" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngResources" CodeBehind="mngResources.aspx.cs" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="icon" href="../../img/web.png" />
     <style type="text/css">
         .container_center {
             font-size: 20px;
-           
         }
-        .test{
-            align-content:center;
+
+        .test {
+            align-content: center;
             margin: auto;
         }
-        #submitbut{
+
+        #submitbut {
             margin: 10px;
             font-size: 20px;
         }
+
         .auto-style1 {
             align-content: center;
             margin: auto;
             direction: ltr;
         }
-        .auto-style2 {
-            width: 100%;
-        }
+
         .auto-style3 {
             width: 245px;
         }
-        .auto-style4 {
-            height: 308px;
-        }
+
         .auto-style5 {
             width: 245px;
             height: 28px;
         }
+
         .auto-style6 {
             height: 28px;
         }
+
         .auto-style7 {
             width: 513px;
         }
+
+        .auto-style10 {
+            height: 266px;
+        }
     </style>
-     <script src="../../Script/readForManeger.js">
-   </script> 
-   
+    <script src="../../Script/readForManeger.js">
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <form id="form1" runat="server" class="container_center">
-        <table class="auto-style1" border="1">
-            <caption><h1>Edit course content here</h1></caption>
+        <table class="auto-style1">
+            <caption>
+                <h1>Edit course content here</h1>
+            </caption>
             <tr>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Please Select the language"></asp:Label>
@@ -59,33 +67,24 @@
                         <asp:ListItem>XML &amp; Ajax</asp:ListItem>
                         <asp:ListItem>ASP.Net</asp:ListItem>
                     </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="lanList" ErrorMessage="Please chose language" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td>
-                    Please Select what you want to do</td>
-                <td class="auto-style7">
-                    <asp:RadioButtonList ID="actList" runat="server" AutoPostBack="True" RepeatDirection="Horizontal" OnSelectedIndexChanged="actList_SelectedIndexChanged">
-                        <asp:ListItem>Insert content</asp:ListItem>
-                        <asp:ListItem>Delete content</asp:ListItem>
-                    </asp:RadioButtonList>
-                </td>
-            </tr>
-            <tr><td colspan="2"> <h2>Insert new content
-                </h2></td></tr>
-            <tr><td colspan="2" class="auto-style4">
-                <div id="ins" runat="server" visible="False">
-                   
-                    <table class="auto-style2">
+                <td colspan="2" class="auto-style10">
+                    <h2 style="text-align:center">Insert new content</h2>
+                    <table id="ins" runat="server">
                         <tr>
-                                                        <td>
-                                                            &nbsp;</td>
-                                                        <td>
-                                <asp:RadioButtonList ID="type_list" runat="server" AutoPostBack="True">
-                                    <asp:ListItem>0</asp:ListItem>
-                                    <asp:ListItem>1</asp:ListItem>
+                            <td>
+                                <asp:Label ID="Label4" runat="server" Text="Select Type"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:RadioButtonList ID="type_list" runat="server" AutoPostBack="True" RepeatDirection="Horizontal" OnSelectedIndexChanged="type_list_SelectedIndexChanged">
+                                    <asp:ListItem>Lectures</asp:ListItem>
+                                    <asp:ListItem>Resources</asp:ListItem>
                                 </asp:RadioButtonList>
-                                                        </td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="type_list" ErrorMessage="Please select type" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style3">
@@ -93,6 +92,7 @@
                             </td>
                             <td>
                                 <asp:TextBox ID="ID_TB" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ID_TB" ErrorMessage="please enter ID" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
                         <tr>
@@ -101,6 +101,7 @@
                             </td>
                             <td>
                                 <asp:TextBox ID="Title_TB" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Title_TB" ErrorMessage="Please enter title" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
                         <tr>
@@ -108,7 +109,7 @@
                                 <asp:Label ID="file_label" runat="server" Text="File src" Visible="False"></asp:Label>
                             </td>
                             <td>
-                                <asp:FileUpload ID="fileUpload" runat="server" />
+                                <asp:FileUpload ID="fileUpload" runat="server" Visible="False" />
                             </td>
                         </tr>
                         <tr>
@@ -116,7 +117,7 @@
                                 <asp:Label ID="lab_label" runat="server" Text="Lab src" Visible="False"></asp:Label>
                             </td>
                             <td class="auto-style6">
-                                <asp:FileUpload ID="labUpload" runat="server" />
+                                <asp:FileUpload ID="labUpload" runat="server" Visible="False" />
                             </td>
                         </tr>
                         <tr>
@@ -130,28 +131,28 @@
                         <tr>
                             <td class="auto-style3">&nbsp;</td>
                             <td>
-                                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add" />
                             </td>
                         </tr>
                     </table>
-                   
-                </div>
-                </td></tr>
-            <tr> <td colspan="2"> <h2>Delete contentnt<asp:TextBox ID="TextBox1" runat="server" Height="16px"></asp:TextBox>
-                </h2></td></tr>
-            <tr>
-                <td colspan="2">
-                    <div id="langauge" runat="server">
-                    </div>
                 </td>
             </tr>
+
             <tr>
-                <td colspan="2">
-                    <asp:Button ID="delete" runat="server" OnClick="delete_Click" Text="Button"/>
-                    </td>
+                <td colspan="2" class="auto-style10" id="del" runat="server">
+
+                    <h2 style="text-align: center">Delete contentnt<asp:TextBox ID="TextBox1" runat="server" Height="16px" Visible="False" Enabled="False" Width="32px"></asp:TextBox>
+                    </h2>
+                    <div id="langauge" runat="server">
+                    </div>
+
+                    <asp:Button ID="deletebtn" runat="server" OnClick="delete_Click" Text="Delete" Visible="False" />
+                </td>
             </tr>
+
+
         </table>
     </form>
-    
-   
+
+
 </asp:Content>
