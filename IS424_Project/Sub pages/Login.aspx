@@ -10,6 +10,25 @@
             color: #FF0000;
         }
     </style>
+    <script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+              Session.Contents.RemoveAll();
+            Response.Redirect("./Home.aspx");
+        }
+
+</script>
+</asp:Content>
+ <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
+<div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" visible="False">Sign out from Student</a></li>
+            </ul>
+        </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section id="description" style="background-image:url('../img/poster.jpg'); min-height: 600px;">

@@ -24,13 +24,13 @@ namespace IS424_Project
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// username control.
+        /// signoupalceholder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor username;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder signoupalceholder;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

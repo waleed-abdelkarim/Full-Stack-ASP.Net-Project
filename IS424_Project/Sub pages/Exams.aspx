@@ -1,6 +1,25 @@
-﻿<%@ Page Title="Exam Center" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeFile="Exams.aspx.cs" Inherits="IS424_Project.Sub_pages.Exams" %>
+﻿<%@ Page Title="Exam Center" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" Inherits="IS424_Project.Sub_pages.Exams" Codebehind="Exams.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 	    <link rel="icon" href="../../img/web.png" />
+	<script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+              Session.Contents.RemoveAll();
+            Response.Redirect("./Home.aspx");
+        }
+
+</script>
+</asp:Content>
+ <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
+<div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" visible="False">Sign out from Student</a></li>
+            </ul>
+        </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<form id="form1" runat="server" class="container_center">

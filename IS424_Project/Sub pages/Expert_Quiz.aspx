@@ -29,8 +29,25 @@
 		}
 
     </style>
-</asp:Content>
+    <script runat="server">
 
+        Protected Sub clear(sender As Object, e As EventArgs)
+            Session.Contents.RemoveAll()
+            Response.Redirect("./Home.aspx")
+        End Sub
+
+</script>
+</asp:Content>
+ <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
+<div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" visible="False">Sign out from Student</a></li>
+            </ul>
+        </div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 	<asp:Label runat="server" CssClass="quiz">

@@ -11,7 +11,9 @@ namespace IS424_Project.Sub_pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+                if (!string.IsNullOrEmpty(Session["Username"] as string))
+                    username.Visible = true;
         }
     }
 }

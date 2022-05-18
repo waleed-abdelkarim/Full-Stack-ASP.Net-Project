@@ -13,6 +13,9 @@ Partial Class Expert_Quiz
             If String.IsNullOrEmpty(Session("level")) Then
                 Response.Redirect("./Login.aspx")
             End If
+            If String.IsNullOrEmpty(Session("Username")) Then
+                username.Visible = True
+            End If
         End If
 
         If Not IsPostBack Then

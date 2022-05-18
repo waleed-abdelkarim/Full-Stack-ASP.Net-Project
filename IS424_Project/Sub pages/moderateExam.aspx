@@ -8,6 +8,15 @@
         document.onload = loadXMLDoc();
 
     </script>
+		<script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+              Session.Contents.RemoveAll();
+            Response.Redirect("./Home.aspx");
+        }
+
+</script>
 
    <style>
          .container_ce {
@@ -37,6 +46,17 @@
     </style>
 
 </asp:Content>
+ <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
+<div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" visible="False">Sign out from Student</a></li>
+            </ul>
+        </div>
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<form id="form1" runat="server" ><asp:TextBox ID="mark" runat="server" OnTextChanged="Mark_TextChanged" AutoPostBack="True" Visible="True" Height="1px" Width="1px" ViewStateMode="Inherit" Enabled="True" BackColor="LightGray" BorderStyle="None"></asp:TextBox></form>
 	             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>

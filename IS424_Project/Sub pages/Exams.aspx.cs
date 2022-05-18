@@ -13,9 +13,10 @@ namespace IS424_Project.Sub_pages
         {
             if (!IsPostBack)
                 if (Session["UserName"] == null)
-                {
                     Response.Redirect("./Login.aspx");
-                }
+            if (!string.IsNullOrEmpty(Session["Username"] as string))
+                username.Visible = true;
         }
+        }
+
     }
-}

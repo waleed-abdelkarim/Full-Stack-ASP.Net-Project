@@ -16,13 +16,17 @@ namespace IS424_Project.Sub_pages
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-                if (Session["UserName"] != null)
-                {
+            {
+                if (!string.IsNullOrEmpty(Session["Username"] as string)) { 
                     LoginForm.Style.Add("display", "none");
-                }
+                    username.Visible = true; }
+                else
+                    LoginForm.Style.Add("display", "block");
+                    
+            }
         }
 
-        protected void LoginBtn_Click(object sender, EventArgs e)
+            protected void LoginBtn_Click(object sender, EventArgs e)
         {
             incorrectLabel.Visible = false;
             String userName = TB_UserName.Text;

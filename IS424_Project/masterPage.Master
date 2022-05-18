@@ -8,27 +8,15 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="./CSS/style.css">
-       <script runat="server">
-
-      protected void clear(object sender, EventArgs e)
-        {
-              Session.Contents.RemoveAll();
-            Response.Redirect("./Home.aspx");
-        }
-
-   </script>
+    
 </head>
 <body >
 
     <header>
-         <div class="user" >
-            <ul>
-                <li><a id="username"
-                            onserverclick="clear"
-                            runat="server"
-                    CausesValidation="False" >Sign out from Student</a></li>
-            </ul>
-        </div>
+       <div>
+        <asp:ContentPlaceHolder ID="signoupalceholder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
         <div class="container">
             <h1 id="logo"><a href="./Home.aspx" style="color: darkorange; text-decoration: none">IS424</a> Web
 				Application Development

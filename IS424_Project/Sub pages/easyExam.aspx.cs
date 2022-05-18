@@ -11,11 +11,13 @@ namespace IS424_Project.Sub_pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Session["level"] as string))
-            {
-                Response.Redirect("./Login.aspx");
+            if (!IsPostBack) { 
+                if (string.IsNullOrEmpty(Session["level"] as string))
+                    Response.Redirect("./Login.aspx");
+                if (!string.IsNullOrEmpty(Session["Username"] as string))
+                    username.Visible = true;
             }
-        }
+           }
         protected void Mark_TextChanged(object sender, EventArgs e)
         {
             if (int.Parse(mark.Text.ToString()) >= 60)

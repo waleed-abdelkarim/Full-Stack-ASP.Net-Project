@@ -21,6 +21,8 @@ namespace IS424_Project.Sub_pages
                 }
                 else if (string.IsNullOrEmpty(Session["level"] as string))
                     Response.Redirect("./Login.aspx");
+                if (!string.IsNullOrEmpty(Session["Username"] as string))
+                    username.Visible = true;
             }
 
            

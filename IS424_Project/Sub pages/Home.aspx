@@ -27,6 +27,25 @@
             height: 40px;
         }
     </style>
+    <script runat="server">
+
+      protected void clear(object sender, EventArgs e)
+        {
+              Session.Contents.RemoveAll();
+            Response.Redirect("./Home.aspx");
+        }
+
+</script>
+</asp:Content>
+ <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
+<div class="user" >
+            <ul>
+                <li><a id="username"
+                            onserverclick="clear"
+                            runat="server"
+                    CausesValidation="False" visible="False">Sign out from Student</a></li>
+            </ul>
+        </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  
