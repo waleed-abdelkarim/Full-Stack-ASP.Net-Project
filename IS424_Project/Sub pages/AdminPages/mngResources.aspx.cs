@@ -20,9 +20,9 @@ namespace IS424_Project.Sub_pages.AdminPages
         protected void lanList_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lanList.SelectedIndex == 0)
-                path = "../../Data/HTML - Copy.xml";
+                path = "../../Data/HTML.xml";
             else if (lanList.SelectedIndex == 1)
-                path = "../../Data/CSS - Copy.xml";
+                path = "../../Data/CSS.xml";
             else if (lanList.SelectedIndex == 2)
                 path = "../../Data/JS.xml";
             else if (lanList.SelectedIndex == 3)
@@ -41,9 +41,9 @@ namespace IS424_Project.Sub_pages.AdminPages
         protected void delete_Click(object sender, EventArgs e)
         {
             if (lanList.SelectedIndex == 0)
-                path = "../../Data/HTML - Copy.xml";
+                path = "../../Data/HTML.xml";
             else if (lanList.SelectedIndex == 1)
-                path = "../../Data/CSS - Copy.xml";
+                path = "../../Data/CSS.xml";
             else if (lanList.SelectedIndex == 2)
                 path = "../../Data/JS.xml";
             else if (lanList.SelectedIndex == 3)
@@ -56,15 +56,9 @@ namespace IS424_Project.Sub_pages.AdminPages
             {
                
                 XmlDocument doc = new XmlDocument();
-                s = $"console.log('{path}')\nconsole.log('hello')";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
                 doc.Load(Server.MapPath($"{path}"));
-                s = $"console.log('1')";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
                 XmlNode node = null;
                 XmlNodeList x = doc.GetElementsByTagName("item");
-                s = $"console.log({path})";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
 
                 for (var i = 0; i < x.Count; i++)
                 {
@@ -87,8 +81,6 @@ namespace IS424_Project.Sub_pages.AdminPages
             }
             catch (Exception ex)
             {
-                s = $"console.log('{ex.Message}');";
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", s, true);
             }
         }
 
@@ -108,7 +100,7 @@ namespace IS424_Project.Sub_pages.AdminPages
             String websrc = web_TB.Text;
 
             XmlDocument doc = new XmlDocument();
-            doc.Load(Server.MapPath("../../Data/CSS - Copy.xml"));
+            doc.Load(Server.MapPath($"{path}"));
             XmlNode node = null;
             String savePath = "../Files/";
             if (type_list.SelectedIndex == 0)
@@ -139,7 +131,7 @@ namespace IS424_Project.Sub_pages.AdminPages
             }
 
             string newXML = doc.OuterXml;
-            doc.Save(Server.MapPath("../../Data/CSS - Copy.xml"));
+            doc.Save(Server.MapPath($"{path}"));
 
 
 

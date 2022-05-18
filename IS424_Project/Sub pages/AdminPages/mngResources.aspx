@@ -141,7 +141,7 @@
             <tr>
                 <td colspan="2" class="auto-style10" id="del" runat="server">
 
-                    <h2 style="text-align: center">Delete contentnt<asp:TextBox ID="TextBox1" runat="server" Height="16px" Visible="False" Enabled="False" Width="32px"></asp:TextBox>
+                    <h2 style="text-align: center">Delete contentnt<asp:TextBox ID="TextBox1" runat="server" Height="1px" Visible="False" Enabled="False" Width="1px" BackColor="LightGray" BorderColor="LightGray" BorderStyle="None"></asp:TextBox>
                     </h2>
                     <div id="langauge" runat="server">
                     </div>

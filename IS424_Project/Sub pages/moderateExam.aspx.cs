@@ -16,12 +16,26 @@ namespace IS424_Project.Sub_pages
             {
                 if (!string.IsNullOrEmpty(Session["level"] as string))
                 {
-                    if (Session["level"].Equals("Biginner"))
+                    if (Session["level"].Equals("Beginner"))
                         Response.Redirect("./Login.aspx");
                 }
                 else if (string.IsNullOrEmpty(Session["level"] as string))
                     Response.Redirect("./Login.aspx");
             }
+
+           
+
+        }
+        protected void Mark_TextChanged (object sender, EventArgs e)
+        {
+            if (int.Parse(mark.Text.ToString()) >= 60)
+                if (!string.IsNullOrEmpty(Session["level"] as string))
+                {
+                    SqlDataSource1.UpdateCommand = $"UPDATE Users" +
+                    $" set [Level] = 'Expert' WHERE [Username] = '{Session["Username"]}';";
+                    SqlDataSource1.Update();
+                    Session["level"] = "Expert";
+                }
         }
     }
 }

@@ -35,8 +35,13 @@
 			border-radius: 5px;
 		}
     </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+	<form id="form1" runat="server" ><asp:TextBox ID="mark" runat="server" OnTextChanged="Mark_TextChanged" AutoPostBack="True" Visible="True" Height="1px" Width="1px" ViewStateMode="Inherit" Enabled="True" BackColor="LightGray" BorderStyle="None"></asp:TextBox></form>
+	             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+
+	
 <section class="quiz">
 
 

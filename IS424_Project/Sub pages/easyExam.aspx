@@ -3,6 +3,8 @@
     <link rel="icon" href="../img/exams.png" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="form1" runat="server" ><asp:TextBox ID="mark" runat="server" OnTextChanged="Mark_TextChanged" AutoPostBack="True" Visible="True" Height="1px" Width="1px" ViewStateMode="Inherit" Enabled="True" BackColor="LightGray" BorderStyle="None"></asp:TextBox></form>
+	             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
     <div class="container_center">
     <center><h1>Quiz Questions</h1></center>
 
@@ -145,70 +147,39 @@
 <script>
 
     var numQues = 12;
-
     var numChoi = 3;
-
     var answers = new Array(12);
-
     answers[0] = "a";
-
     answers[1] = "b";
-
     answers[2] = "a";
-
     answers[3] = "c";
-
     answers[4] = "b";
-
     answers[5] = "c";
-
     answers[6] = "c";
-
     answers[7] = "a";
-
     answers[8] = "c";
-
     answers[9] = "a";
-
     answers[10] = "a";
-
     answers[11] = "c";
 
 
     function getScore(form) {
-
         var score = 0;
-
         var currElt;
-
         var currSelection;
-
         for (i = 0; i < numQues; i++) {
-
             currElt = i * numChoi;
-
             answered = false;
-
             for (j = 0; j < numChoi; j++) {
-
                 currSelection = form.elements[currElt + j];
-
                 if (currSelection.checked) {
-
                     answered = true;
-
                     if (currSelection.value == answers[i]) {
-
                         score++;
-
                         break;
-
                     }
-
                 }
-
             }
-
             if (answered === false) { alert("Do answer all the questions, Please"); return false; }
 
         }
@@ -216,7 +187,7 @@
         var scoreper = Math.round(score / numQues * 100);
 
         form.percentage.value = scoreper + "%";
-
+        document.getElementById("ContentPlaceHolder1_mark").value = scoreper;
         form.mark.value = score;
 
     }

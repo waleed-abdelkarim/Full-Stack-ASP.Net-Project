@@ -102,7 +102,6 @@
     <Content Include="Data\XML_Ajax.xml" />
     <Content Include="img\asp.png" />
     <Content Include="img\xml.png" />
-    <Content Include="Script\JavaScript.js" />
     <Content Include="Script\Moderate.js" />
     <Content Include="Script\readForManeger.js" />
     <Content Include="Script\readToPages.js" />
@@ -287,8 +286,12 @@
     <Content Include="Files\ASP\ch25ASP.NET.zip" />
     <Content Include="Files\ASP\IS446-chap25.pdf" />
     <Content Include="AdminMaster.Master" />
-    <Content Include="Data\DataSchema.dtd" />
-    <Content Include="Data\ModerateSchema.dtd" />
+    <Content Include="Data\DataSchema.dtd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\ModerateSchema.dtd">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <Content Include="masterPage.Master" />
     <None Include="Web.Debug.config">

@@ -15,6 +15,17 @@ namespace IS424_Project.Sub_pages
             {
                 Response.Redirect("./Login.aspx");
             }
-            }
+        }
+        protected void Mark_TextChanged(object sender, EventArgs e)
+        {
+            if (int.Parse(mark.Text.ToString()) >= 60)
+                if (!string.IsNullOrEmpty(Session["level"] as string))
+                {
+                    SqlDataSource1.UpdateCommand = $"UPDATE Users" +
+                    $" set [Level] = 'Moderate' WHERE [Username] = '{Session["Username"]}';";
+                    SqlDataSource1.Update();
+                    Session["level"] = "Moderate";
+                }
+        }
     }
 }

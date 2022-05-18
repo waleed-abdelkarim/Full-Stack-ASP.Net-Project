@@ -38,6 +38,7 @@ function result() {
             }
         }
     }
+    document.getElementById("ContentPlaceHolder1_mark").value = (total / 10) * 100;
     window.alert(total + '/10 \n' + mis);
 
 }
