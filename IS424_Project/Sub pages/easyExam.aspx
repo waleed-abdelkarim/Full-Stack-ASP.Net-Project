@@ -155,8 +155,8 @@
 
         <input type="button"value="Grade Me"onClick="getScore(this.form);">
         <input type="reset" value="Clear"><p>
-        Number of score out of 12 = <input type="text" size="15" name= "mark">
-        Score in percentage = <input type="text" size="15" name="percentage"><br>
+        Number of score out of 12 = <input type="text" size="5" name= "mark" disabled>
+        Score in percentage = <input type="text" size="5" name="percentage" disabled><br>
      </form>
 
     <form method="post" name="Form" onsubmit="" action="">
