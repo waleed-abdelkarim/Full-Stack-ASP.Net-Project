@@ -2,13 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="icon" href="../img/exams.png" />
     <script runat="server">
-
       protected void clear(object sender, EventArgs e)
         {
               Session.Contents.RemoveAll();
             Response.Redirect("./Home.aspx");
         }
-
 </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="signoupalceholder" runat="server">
@@ -23,10 +21,8 @@
         </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-        <form id="form2" runat="server" ><asp:TextBox ID="mark" runat="server" OnTextChanged="mark_TextChanged" AutoPostBack="True" Visible="True" Height="25px" Width="25px" ViewStateMode="Inherit" Enabled="True" BackColor="LightGray" BorderStyle="None"></asp:TextBox></form>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+    <form id="form1" runat="server" ><asp:TextBox ID="mark" runat="server" OnTextChanged="Mark_TextChanged" AutoPostBack="True" Visible="True" Height="1px" Width="1px" ViewStateMode="Inherit" Enabled="True" BackColor="LightGray" BorderStyle="None"></asp:TextBox></form>
+	             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConn %>" ProviderName="<%$ ConnectionStrings:userConn.ProviderName %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
     <div class="container_center">
     <center><h1>Quiz Questions</h1></center>
 
@@ -157,8 +153,8 @@
 
         <input type="button"value="Grade Me"onClick="getScore(this.form);">
         <input type="reset" value="Clear"><p>
-        Number of score out of 12 = <input type="text" size="15" name= "mark">
-        Score in percentage = <input type="text" size="15" name="percentage"><br>
+        Number of score out of 12 = <input type="text" size="5" name= "mark" disabled>
+        Score in percentage = <input type="text" size="5" name="percentage" disabled><br>
      </form>
 
     <form method="post" name="Form" onsubmit="" action="">
@@ -167,7 +163,6 @@
 
     </div>
 <script>
-
     var numQues = 12;
     var numChoi = 3;
     var answers = new Array(12);
@@ -183,8 +178,6 @@
     answers[9] = "a";
     answers[10] = "a";
     answers[11] = "c";
-
-
     function getScore(form) {
         var score = 0;
         var currElt;
@@ -203,17 +196,12 @@
                 }
             }
             if (answered === false) { alert("Do answer all the questions, Please"); return false; }
-
         }
-
         var scoreper = Math.round(score / numQues * 100);
-
         form.percentage.value = scoreper + "%";
         document.getElementById("ContentPlaceHolder1_mark").value = scoreper;
         form.mark.value = score;
-
     }
-
 </script>
 
 

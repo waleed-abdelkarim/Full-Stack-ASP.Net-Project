@@ -19,9 +19,8 @@ namespace IS424_Project.Sub_pages
             }
            }
 
-        protected void mark_TextChanged(object sender, EventArgs e)
+        protected void Mark_TextChanged(object sender, EventArgs e)
         {
-            Label1.Text = "hello";
             if (int.Parse(mark.Text.ToString()) >= 60)
                 if (!string.IsNullOrEmpty(Session["level"] as string))
                 {
@@ -31,21 +30,6 @@ namespace IS424_Project.Sub_pages
                     Session["level"] = "Moderate";
                 }
         }
-        //protected void Mark_TextChanged(object sender, EventArgs e)
-        //{
-        //    if (int.Parse(mark.Text.ToString()) >= 60)
-        //        try
-        //        {
-        //            SqlDataSource1.UpdateCommand = $"UPDATE Users" +
-        //            $" set [Level] = 'Moderate' WHERE [Username] = '{Session["Username"]}';";
-        //            SqlDataSource1.Update();
-        //            Session["level"] = "Moderate";
-        //            Label1.Text = SqlDataSource1.UpdateCommand;
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Label1.Text=ex.Message;
-        //        }
-        //}
+       
     }
 }
