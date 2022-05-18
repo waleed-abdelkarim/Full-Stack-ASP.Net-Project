@@ -21,7 +21,7 @@
 			<a href="./mngUsers.aspx">
 				<div class="box">
 					<img src="../../img/web.png">
-					<h2>Manege Users</h2>
+					<h2>Manage Users</h2>
 					<p>Add, Delete, and Update users</p>
 				</div>
 			</a>
@@ -29,7 +29,7 @@
 			<a href="./mngResources.aspx">
 				<div class="box">
 					<img src="../../img/web.png">
-					<h2>Manege Resources</h2>
+					<h2>Manage Resources</h2>
 					<p>Add new resources, or delete old ones</p>
 				</div>
 			</a>

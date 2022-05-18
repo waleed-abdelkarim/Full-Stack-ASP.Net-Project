@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Manege Users" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngUsers" CodeFile="mngUsers.aspx.cs" %>
+﻿<%@ Page Title="Manage Users" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngUsers" CodeFile="mngUsers.aspx.cs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="icon" href="../../img/web.png" />
     <style type="text/css">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Manege Resources" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngResources" CodeBehind="mngResources.aspx.cs" %>
+﻿<%@ Page Title="Manage Resources" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="True" Inherits="IS424_Project.Sub_pages.AdminPages.mngResources" CodeBehind="mngResources.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="icon" href="../../img/web.png" />
@@ -6,40 +6,32 @@
         .container_center {
             font-size: 20px;
         }
-
         .test {
             align-content: center;
             margin: auto;
         }
-
         #submitbut {
             margin: 10px;
             font-size: 20px;
         }
-
         .auto-style1 {
             align-content: center;
             margin: auto;
             direction: ltr;
         }
-
         .auto-style3 {
             width: 245px;
         }
-
         .auto-style5 {
             width: 245px;
             height: 28px;
         }
-
         .auto-style6 {
             height: 28px;
         }
-
         .auto-style7 {
             width: 513px;
         }
-
         .auto-style10 {
             height: 266px;
         }
@@ -146,7 +138,7 @@
                     <div id="langauge" runat="server">
                     </div>
 
-                    <asp:Button ID="deletebtn" runat="server" OnClick="delete_Click" Text="Delete" Visible="False" />
+                    <asp:Button ID="deletebtn" runat="server" OnClick="delete_Click" Text="Delete"   CausesValidation="False" Visible="False" />
                 </td>
             </tr>
 
