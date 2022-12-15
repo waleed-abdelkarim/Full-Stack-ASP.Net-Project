@@ -8,44 +8,52 @@ In this project, we decided to create a website to help learners in their study 
 
 
 
-![image](https://user-images.githubusercontent.com/65503195/207802010-832ec303-d576-4724-bd36-94d346199d8a.png)
+![Picture8](https://user-images.githubusercontent.com/65503195/207805715-731bb57b-12cc-4bd1-ba9c-890af6ff1d1a.png)
+
 
 
 
 •	Site Map:
 
-![image](https://user-images.githubusercontent.com/65503195/207802074-d640bd72-f5ce-4352-987a-35d81e2039ec.png)
+
+![Picture1](https://user-images.githubusercontent.com/65503195/207805632-fab6ed1d-c781-463f-801e-53d0aaeb0beb.png)
 
 
 •	User interface:
 
   o	Home page:
 
-  ![image](https://user-images.githubusercontent.com/65503195/207802196-45c4b09d-5959-4394-ab0e-b75faf60ea58.png)
   
+  ![Picture2](https://user-images.githubusercontent.com/65503195/207805412-2758db67-f051-411b-aeba-50c506890c91.png)
+
+   
   
   o	Learning centre:
   
-  ![image](https://user-images.githubusercontent.com/65503195/207802340-947f847b-64db-46a7-87c5-816bc7bd1510.png)
-  
+ 
+  ![Picture3](https://user-images.githubusercontent.com/65503195/207805484-31a871eb-5350-4942-9e92-f1791ab4d0f7.png)
+
   
   o	Exam centre:
   
-  ![image](https://user-images.githubusercontent.com/65503195/207802524-26df54c9-d83f-40d8-bd80-2623809a403e.png)
+  ![Picture4](https://user-images.githubusercontent.com/65503195/207805533-a609cc96-889b-4cdb-8c51-83df30084610.png)
+
   
 
   o	Admin page:
   
-  ![image](https://user-images.githubusercontent.com/65503195/207802673-7f10794c-a008-4f19-991f-beb25f3d2882.png)
   
+  ![Picture5](https://user-images.githubusercontent.com/65503195/207805571-2775acf1-135b-40df-9850-fc1e647d9f8c.png)
+
 
   o	Manage users page:
   
-  ![image](https://user-images.githubusercontent.com/65503195/207802773-64d8b884-4d6f-47f0-bcb3-db99db4ed7d5.png)
+  ![Picture6](https://user-images.githubusercontent.com/65503195/207805591-46e86dd5-2bd3-4623-9f9a-a6560e62713c.png)
+
   
 
   o	Manage resources page:
   
-  ![image](https://user-images.githubusercontent.com/65503195/207802834-f50b213e-74a8-4d48-a702-b4e64c286225.png)
-  
+  ![Picture7](https://user-images.githubusercontent.com/65503195/207805606-78fa9dba-5357-4cbe-baab-0ca5a9755f86.png)
+
 
